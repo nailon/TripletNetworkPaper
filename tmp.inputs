@@ -1,0 +1,4 @@
+ \usepackage{pstricks}
+ \usepackage{epsfig}
+\usepackage{pst-grad} % For gradients
+\usepackage{pst-plot} % For axes

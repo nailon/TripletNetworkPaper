@@ -1,0 +1,171 @@
+\documentclass{article} % For LaTeX2e
+\usepackage{iclr2015,times}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage[pdftex]{graphicx}
+
+\title{Deep metric learning using Triplet network}
+
+
+\author{
+Elad Hoffer \\
+Department of Electrical Engineering\\
+Technion Israel Institute of Technology\\
+\texttt{ehoffer@tx.technion.ac.il} \\
+\And
+Nir Ailon \\
+Department of Computer Science\\
+Technion Israel Institute of Technology\\
+\texttt{nailon@cs.technion.ac.il}
+}
+
+% The \author macro works with any number of authors. There are two commands
+% used to separate the names and addresses of multiple authors: \And and \AND.
+%
+% Using \And between authors leaves it to \LaTeX{} to determine where to break
+% the lines. Using \AND forces a linebreak at that point. So, if \LaTeX{}
+% puts 3 of 4 authors names on the first line, and the last on the second
+% line, try using \AND instead of \And before the third author name.
+
+\newcommand{\fix}{\marginpar{FIX}}
+\newcommand{\new}{\marginpar{NEW}}
+
+%\iclrfinalcopy % Uncomment for camera-ready version
+
+\iclrconference % Uncomment if submitted as conference paper instead of workshop
+
+\begin{document}
+
+
+\maketitle
+
+\begin{abstract}
+Deep learning has proven itself as a successful set of models for learning useful semantic representations of data. These, however, are mostly implicitly learned as part of a classification task.
+In this paper we propose the \emph{Triplet network} model, which aims to learn useful representations by distance comparisons. We show promising results demonstrating the
+success of this model on the Cifar10 image dataset. We also discuss future possible usages as a framework for unsupervised learning.
+\end{abstract}
+
+
+\section{Introduction}
+For the past few years, deep learning models have been used extensively to solve various machine learning tasks. One of the underlying assumptions is that deep, hierarchical models such as convolutional networks
+create useful representation of data (\citet{Bengio2009,Hinton2007}), that can then be used to distinguish between available classes.
+This quality is in contrast with traditional approaches which required engineered features extracted from data and then used in separate learning schemes.\\
+Features extracted by deep networks were also shown to provide useful representation (\citet{Zeiler2013,Sermanet}) that can transferred for new, different tasks (\citet{Razavian2014}), often with good accuracy.
+
+Despite of their importance, these representations and the metric induced by them are usually ``side-effects'' of using deep networks as a classification model, rather than being explicitly found.
+There are also many open question regarding the intermediate representation and their role in disentangling and explaining the data (\citet{Bengio2013}).\\
+Notable exceptions where explicit metric learning is preformed are the \emph{Siamese Network} variants (\citet{bromley1993signature,Chopra2005,hadsell2006dimensionality})
+, in which a contrastive loss over the $L_1$ or $L_2$ representation distance is used to train the network to distinguish between similar and dissimilar samples.
+However, the representations learned by these models provide sub-par results on modern datasets, when compared with other deep learning models. Siamese networks are also sensitive to calibration in the sense that the notion of dissimilarity depends on the context.
+For example: a person might be similar to another person when a dataset of random objects is provided, but might need to be deemed as a dissimilar object when we wish to distinguish between two individuals. Siamese network training requires a minimum distance prior in its loss function which requires calibration.
+In this work, such a calibration is not required.\\
+
+In this work, we follow a similar task to that of \citet{chechik2010large}. For a set of samples $\mathbb{P}$ and a chosen rough similarity measure $r(x,x')$ given through a training oracle
+(e.g how close are two images of objects semantically) we wish to learn a similarity function $S(x,x')$ induced by a normed metric.
+Unlike in \citet{chechik2010large}'s work, our labels are of the form $r(x,x_1)>r(x,x_2)$ for triplets $x,x_1,x_2$ of objects.
+Accordingly, we try to fit a metric embedding and a corresponding similarity function satisfying:
+$$ S(x,x_1)>S(x,x_2), \ \ \forall x,x_1,x_2 \in \mathbb{P} \ \ \text{ for which } r(x,x_1)>r(x,x_2)$$
+In the experiment here, we will always take $x_1$ to be of the same class as $x$ and $x_2$ of a different class, although in general more complicated choices could be made.
+Accordingly, we will use the notation $x^{+}$ and $x^{-}$ instead of $x_1, x_2$.
+Preferring a measure in the $L_2$ space to allow subsequent linear classification, we focus on finding a function $F(x)$ for which $S(x,x')=\|F(x)-F(x')\|_2$.
+Inspired from the recent success of deep learning, we will use a deep network as our embedding function $F(x)$.
+
+\section{Triplet network}
+\subsection{Structure}
+A \emph{Triplet network} (inspired by "Siamese network") is comprised of 3 instances of the same feed-forward network (with shared parameters). \\
+When fed with 3 samples, the network
+outputs 2 values - the $L_2$ distances between the embedded representation of two of its inputs from the representation of the third. \\
+If we will denote the 3 inputs as $x$, $x^{+}$ and $x^{-}$, and the
+embedded representation of the network as $Net(x)$, the output will be the vector:
+
+\begin{equation*}
+    TripletNet(x,x^{-},x^{+})= \begin{bmatrix}
+                       \|Net(x)-Net(x^{-})\|_2 \\[0.3em]
+                      \|Net(x)-Net(x^{+})\|_2 \\
+
+                      \end{bmatrix} \in \mathbb{R}_{+}^2
+\end{equation*}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=0.5\linewidth]{TripletNet_scheme.pdf}
+\end{center}
+   \caption{Triplet network structure }\label{tripletnet_scheme}
+\end{figure}
+
+\subsection{Training}
+Training is preformed by feeding the network with samples, where $x$ and $x^{+}$ are of the same class, and $x^{-}$ is of different class.
+The network architecture allows the task to be expressed as a 2-class classification problem, where the objective is to classify correctly which sample is of the same class as $x$.
+In a more general setting, the objective is to is to classify which is close to $x$.
+We aim to get a representation in which same-class samples have a lower $L_2$ distance induced by the network embedding.
+In order to distinguish between the two distances, and allow training,
+a SoftMax function is applied on both outputs - effectively creating a ratio measure.\\
+Similarly to traditional convolutional-networks, training is done by simple SGD on a negative-log-likelihood loss with regard to the 2-class problem.
+By using the same shared-parameters network, we allow the back-propagation algorithm to update the model with regard to all samples simultaneously.
+
+\section{Tests and results}
+ The Triplet network was implemented and trained using the Torch7 environment (\citet{collobert2011torch7}).
+\subsection{Dataset}
+The Triplet Network was trained on the \emph{Cifar10} dataset (\citet{krizhevsky2009learning}) which consists of 60000 32x32 color images in 10 classes (of which 50000 are used for training only, and 10000 for test only). No data augmentation or whitening was applied, and the only preprocessing was a global normalization to zero mean and unit variance.\\
+Each training instance is a uniformly sampled set of 3 images, 2 of which are of the same class ($x$ and $x^{+}$), and the third ($x^{-}$) is of a different class. Each training epoch consists of 640,000 such instances (randomly chosen each epoch), and a fixed set of 64,000 instances used for test. We emphasize that each test instance involves 3 images from the set of 10000 images which was excluded from training.
+\subsection{Embedding Net}
+The embedding net used is a convolutional-network, consisting of 3 convolutional and 2x2 max-pooling layers, followed by a fourth convolutional layer. A \emph{ReLU} non-linearity is applied between two consecutive layers.
+Network configuration (ordered from input to output) consists of filter sizes \{5,3,3,2\}, and feature map dimensions \{3,64,128,256,128\} where a 128 vector is the final embedded representation of the network. Usually in convolutional networks, subsequent fully-connected
+layer for classification are used. In our net this layer is removed, as we are interested in a feature embedding.
+
+
+\subsection{Results}
+Training is done by SGD, with initial learning-rate of 0.1 that is manually reduced when test accuracy saturates. We used a momentum value of 0.9. We also used the Dropout regularization technique to avoid over-fitting.\\
+After training for ~30 epochs, the network reached a fixed error of 6\% (error is over triplet comparisons).
+We then used the embedding network to extract features from the full dataset. By using a simple multi-class SVM model with these representations, an accuracy of 84\% on the test set was achieved for the full 10-class classification task.
+This result is comparable to state-of-the-art results with deep learning models, when not using any artificial data augmentation (\citet{zeiler2013stochastic,goodfellow2013maxout,LinCY13}). We feel that data augmentation techniques (such as translations, mirroring and noising) may provide similar benefits to those described in previous works.\\
+Another side-affect noticed, is that the representation seems to be sparse - about 25\% non-zero values. This is very helpful when used later as features for classification both computationally and with respect to accuracy, as each class is characterised by only a few non zero elements.
+
+\subsection{2d visualization of features}
+In order to examine our main premise, which is that the network embeds the images into a representation with meaningful properties, we
+use PCA to project the embedding into 2d euclidean space which can be easily visualized(figure \ref{EuclideanRepresentation}).
+We can see a significant clustering by semantic meaning, confirming that the network is useful in embedding
+images into the euclidean space according to their content. \\ Similarity between objects can be found easily by simply measuring the distance between their representations and, as shown in the results, can reach high
+classification accuracy using a simple subsequent linear classifier. Looking the confusion matrix (figure \ref{confusion}) for the linear classifier results on the test set, we can observe how proximity in the eculidean space is correlated with confusion error between classes.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\linewidth]{EuclideanRepresentation.eps}
+\end{center}
+   \caption{Euclidean 2d representation of embedded test data}\label{EuclideanRepresentation}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=0.8\linewidth]{confusion.eps}
+\end{center}
+   \caption{Confusion matrix on Cifar10 test set (numbers indicate accuracy)}\label{confusion}
+\end{figure}
+\section{Future work on unsupervised learning}
+As the Triplet net model allows learning by comparisons of samples instead of direct data labels, usage as an unsupervised learning model is possible.
+Future investigations can be performed in several scenarios:
+\begin{itemize}
+ \item Using spatial information - objects and image patches that are spatially near are expected to be similar from a semantic perspective. Therefore, these could be compared in contrast
+	with more distant image patches that are expected to be less similar.
+\item Using temporal information - The same is applicable to time domain, where two consecutive video frames are expected to describe the same object, while a frame taken 10 minutes later is less likely to do so.
+Triplet net may provide a better platform to learn and improve on past attempts (\citet{mobahi2009deep}).
+\end{itemize}
+It is also well known that humans tend to be better at accurately providing comparative labels. Our framework can be used in a crowd sourcing learning environment. This can be compared with the approach of \citet{shamir}, who used a different approach.
+Furthermore, it may be easier to collect data trainable on a Triplet network, as similarity measure is much easier to attain (pictures taken at the same location, shared annotations, etc).
+
+\section{Conclusions}
+In this work we introduced the \emph{Triplet network} model, a tool that uses a deep network to learn useful representation explicitly.
+The results shown on Cifar10 provide evidence that the representations that were learned are useful to classification in a way that is comparable with a network that was trained explicitly to classify samples. We believe that enhancement to the embedding network
+such as Network-in-Network model (\citet{LinCY13}), Inception models (\citet{inception}) and others can benefit the Triplet net similarly to the way it benefited classifying networks.
+Considering the fact that this method requires to know only that two images are sampled from the same class, rather then knowing what that class is, we think this should be inquired further, and may provide us insights
+to the way deep network learn in general.
+We have also shown how this model learn using only comparative measures instead of labels, which we can use in the future to leverage new data sources.
+\subsubsection*{Acknowledgments}
+
+We gratefully acknowledge the support of NVIDIA Corporation with the donation of the Titan-Z GPU used for this research.
+
+\bibliography{iclr2015}
+\bibliographystyle{iclr2015}
+
+\end{document}

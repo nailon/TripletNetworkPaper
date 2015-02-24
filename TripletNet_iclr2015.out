@@ -1,0 +1,11 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Triplet network}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Structure}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Training}{section.2}% 4
+\BOOKMARK [1][-]{section.3}{Tests and results}{}% 5
+\BOOKMARK [2][-]{subsection.3.1}{Dataset}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.2}{Embedding Net}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.3}{Results}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.4}{2d visualization of features}{section.3}% 9
+\BOOKMARK [1][-]{section.4}{Future work}{}% 10
+\BOOKMARK [1][-]{section.5}{Conclusions}{}% 11

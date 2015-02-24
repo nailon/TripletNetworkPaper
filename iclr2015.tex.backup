@@ -1,0 +1,172 @@
+\documentclass{article} % For LaTeX2e
+\usepackage{iclr2015,times}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage[pdftex]{graphicx}
+
+\title{Deep representation learning\\ using Triplet Network}
+
+
+\author{
+Elad Hoffer \\
+Department of Computer Science\\
+Technion, Israel\\
+\texttt{ehoffer@tx.technion.ac.il} \\
+\And
+Nir Ailon \\
+Department of Computer Science\\
+Technion, Israel
+}
+
+% The \author macro works with any number of authors. There are two commands
+% used to separate the names and addresses of multiple authors: \And and \AND.
+%
+% Using \And between authors leaves it to \LaTeX{} to determine where to break
+% the lines. Using \AND forces a linebreak at that point. So, if \LaTeX{}
+% puts 3 of 4 authors names on the first line, and the last on the second
+% line, try using \AND instead of \And before the third author name.
+
+\newcommand{\fix}{\marginpar{FIX}}
+\newcommand{\new}{\marginpar{NEW}}
+
+%\iclrfinalcopy % Uncomment for camera-ready version
+
+%\iclrconference % Uncomment if submitted as conference paper instead of workshop
+
+\begin{document}
+
+
+\maketitle
+
+\begin{abstract}
+The abstract paragraph should be indented 1/2~inch (3~picas) on both left and
+right-hand margins. Use 10~point type, with a vertical spacing of 11~points.
+The word \textsc{Abstract} must be centered, in small caps, and in point size 12. Two
+line spaces precede the abstract. The abstract must be limited to one
+paragraph.
+\end{abstract}
+
+
+\section{Triplet Network}
+\emph{Triplet network} (inspired by "Siamese network") is comprised of 3 instances of the same feed-forward network (with shared parameters). \\
+When fed with 3 samples, the network
+outputs 2 values - the $L_2$ distance between the embedded representation of 2 input from the representation of the third. \\
+If we will denote the 3 inputs as $x$ $y_1$ and $y_2$, and the
+embedded representation of the network as $Net(x)$, the output will be the vector 
+
+\begin{equation*}
+    TripletNet(x,y_1,y_2)= \begin{bmatrix}
+                       \|Net(x)-Net(y_1)\|_2 \\[0.3em]
+                      \|Net(x)-Net(y_2)\|_2 \\
+
+                      \end{bmatrix}
+\end{equation*}
+
+\subsection{Training}
+Training is preformed by feeding the network with random samples, where $x$ and $y^{+}$ are of the same class, and $y^{-}$ is of different class.
+The objective is to classify correctly which sample is of the same class as $x$. Two same-class samples should have a lower $L_2$ distance after the network embedding. In order to distinguish between the highest distance, a SoftMax function is applied on both outputs - effectively creating a ratio measure.\\
+By using the same shared-parameters network, we allow the back-propagation algorithm to update the model with regard to all samples \emph{simultaneously}. Training is done
+by simple stochastic-gradient-descent on a negative-log-likelihood loss with regard to the 2-class problem. 
+
+\section{Citations, figures, tables, references}
+\label{others}
+
+These instructions apply to everyone, regardless of the formatter being used.
+
+\subsection{Citations within the text}
+
+Citations within the text should be based on the {\tt natbib} package
+and include the authors' last names and year (with the ``et~al.'' construct
+for more than two authors). When the authors or the publication are
+included in the sentence, the citation should not be in parenthesis (as
+in ``See \citet{Hinton06} for more information.''). Otherwise, the citation
+should be in parenthesis (as in ``Deep learning shows promise to make progress towards AI~\citep{Bengio+chapter2007}.'').
+
+The corresponding references are to be listed in alphabetical order of
+authors, in the \textsc{References} section. As to the format of the
+references themselves, any style is acceptable as long as it is used
+consistently.
+
+\subsection{Footnotes}
+
+Indicate footnotes with a number\footnote{Sample of the first footnote} in the
+text. Place the footnotes at the bottom of the page on which they appear.
+Precede the footnote with a horizontal rule of 2~inches
+(12~picas).\footnote{Sample of the second footnote}
+
+
+\subsection{Tables}
+
+All tables must be centered, neat, clean and legible. Do not use hand-drawn
+tables. The table number and title always appear before the table. See
+Table~\ref{sample-table}.
+
+Place one line space before the table title, one line space after the table
+title, and one line space after the table. The table title must be lower case
+(except for first word and proper nouns); tables are numbered consecutively.
+
+\begin{table}[t]
+\caption{Sample table title}
+\label{sample-table}
+\begin{center}
+\begin{tabular}{ll}
+\multicolumn{1}{c}{\bf PART}  &\multicolumn{1}{c}{\bf DESCRIPTION}
+\\ \hline \\
+Dendrite         &Input terminal \\
+Axon             &Output terminal \\
+Soma             &Cell body (contains cell nucleus) \\
+\end{tabular}
+\end{center}
+\end{table}
+
+\section{Final instructions}
+Do not change any aspects of the formatting parameters in the style files.
+In particular, do not modify the width or length of the rectangle the text
+should fit into, and do not change font sizes (except perhaps in the
+\textsc{References} section; see below). Please note that pages should be
+numbered.
+
+\section{Tests and results}
+\subsection{Dataset}
+The Triplet Network was trained on the \emph{Cifar10} dataset which consists of 60000 32x32 colour images in 10 classes, with 6000 images per class. There are 50000 training images and 10000 test images. \\
+Each training instance is a uniformly sampled 3 images, 2 of which are of the same class, and the third is of a different class. Each training epoch consists of 640,000 such instances (randomly chosen each epoch), and a fixed 64,000 instances used for test (from the test images).
+\subsection{Embedding Net}
+The embedding net used is a convolutional-network, consisting of 3 convolutional and max-pooling layers. The network outputs a fixed vector of length 128 as embedded representation. These values are constrained to be positive by a \emph{ReLU} non-linearity ($ReLU(x)=max\{0,x\})$. The network also uses the Dropout regularization technique to avoid over-fitting.
+\subsection{Results}
+After training for ~30 epochs, the network reached a fixed error of 6\% (error of triplet comparisons). By using the representation of the data gained from the embedding network, an accuracy of 84\% was reached on all 10 classes. To achieve this, the representations were simply fed into a multi-class SVM model.\\ This results is comparable to state-of-the-art results with out any data augmentation.\\
+Another side-affect noticed, is that the representation seems to be sparse - about 25\% non-zero values. This is very helpful when used in later classification.
+
+\subsection{2d visualization of classes}
+By using PCA, a transformation of the representation into 2d can be displayed. We can see a significant clustering by semantic meaning, confirming that the network is useful in embedding
+images into the Euclidean space according to their content (figure \ref{EuclideanRepresentation}).
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=0.8\linewidth]{EuclideanRepresentation.eps}
+\end{center}
+   \caption{Euclidean 2d Representation}\label{EuclideanRepresentation}
+\end{figure}
+
+\section{Unsupervised Learning}
+\begin{figure}[h]
+\begin{center}
+  \includegraphics{Unsupervised.eps}
+\end{center}
+     \caption{Euclidean 2d of representation in unsupervised learning}\label{unsup}
+
+\end{figure}
+We can use the model for unsupervised training, by using patches from the same image (with different scale, augmentation) as $x$ and $y^{+}$, 
+and an image taken from a different source as $y^{-}$. This seems to behave in a desirable way (although of course much less discrminative than the supervised version) as can be seen in Figure (\ref{unsup}).
+
+
+
+
+\subsubsection*{Acknowledgments}
+
+Use unnumbered third level headings for the acknowledgments. All
+acknowledgments, including those to funding agencies, go at the end of the paper.
+
+\bibliography{iclr2015}
+\bibliographystyle{iclr2015}
+
+\end{document}

@@ -1,0 +1,941 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.8.9)  19 DEC 2014 14:09
+entering extended mode
+ \write18 enabled.
+ %&-line parsing enabled.
+**TripletReport.tex
+(./TripletReport.tex
+LaTeX2e <2014/05/01>
+Babel <3.9k> and hyphenation patterns for 79 languages loaded.
+(c:/texlive/2014/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(c:/texlive/2014/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(c:/texlive/2014/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2014/04/30 v1.2b Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+(c:/texlive/2014/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+(c:/texlive/2014/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+(c:/texlive/2014/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+(c:/texlive/2014/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+))
+(c:/texlive/2014/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(c:/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(c:/texlive/2014/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(c:/texlive/2014/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(c:/texlive/2014/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count87
+\Gm@cntv=\count88
+\c@Gm@tempcnt=\count89
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks17
+)
+(c:/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(c:/texlive/2014/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(c:/texlive/2014/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(c:/texlive/2014/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(c:/texlive/2014/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count90
+))
+\Gin@req@height=\dimen111
+\Gin@req@width=\dimen112
+)
+(c:/texlive/2014/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(c:/texlive/2014/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(c:/texlive/2014/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks18
+\ex@=\dimen113
+))
+(c:/texlive/2014/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen114
+)
+(c:/texlive/2014/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count91
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count92
+\leftroot@=\count93
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count94
+\DOTSCASE@=\count95
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen115
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count96
+\c@MaxMatrixCols=\count97
+\dotsspace@=\muskip10
+\c@parentequation=\count98
+\dspbrk@lvl=\count99
+\tag@help=\toks19
+\row@=\count100
+\column@=\count101
+\maxfields@=\count102
+\andhelp@=\toks20
+\eqnshift@=\dimen116
+\alignsep@=\dimen117
+\tagshift@=\dimen118
+\tagwidth@=\dimen119
+\totwidth@=\dimen120
+\lineht@=\dimen121
+\@envbody=\toks21
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(c:/texlive/2014/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2009/07/02 v2.20.1
+\thm@style=\toks23
+\thm@bodyfont=\toks24
+\thm@headfont=\toks25
+\thm@notefont=\toks26
+\thm@headpunct=\toks27
+\thm@preskip=\skip46
+\thm@postskip=\skip47
+\thm@headsep=\skip48
+\dth@everypar=\toks28
+)
+(c:/texlive/2014/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(c:/texlive/2014/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(c:/texlive/2014/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen122
+\lightrulewidth=\dimen123
+\cmidrulewidth=\dimen124
+\belowrulesep=\dimen125
+\belowbottomsep=\dimen126
+\aboverulesep=\dimen127
+\abovetopsep=\dimen128
+\cmidrulesep=\dimen129
+\cmidrulekern=\dimen130
+\defaultaddspace=\dimen131
+\@cmidla=\count103
+\@cmidlb=\count104
+\@aboverulesep=\dimen132
+\@belowrulesep=\dimen133
+\@thisruleclass=\count105
+\@lastruleclass=\count106
+\@thisrulewidth=\dimen134
+)
+(c:/texlive/2014/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen135
+\extrarowheight=\dimen136
+\NC@list=\toks29
+\extratabsurround=\skip49
+\backup@length=\skip50
+)
+(c:/texlive/2014/texmf-dist/tex/latex/paralist/paralist.sty
+Package: paralist 2013/06/09 v2.4 Extended list environments
+\pltopsep=\skip51
+\plpartopsep=\skip52
+\plitemsep=\skip53
+\plparsep=\skip54
+\pl@lab=\toks30
+)
+(c:/texlive/2014/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks31
+\verbatim@line=\toks32
+\verbatim@in@stream=\read1
+)
+(c:/texlive/2014/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(c:/texlive/2014/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(c:/texlive/2014/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen137
+\captionmargin@=\dimen138
+\captionwidth=\dimen139
+\caption@tempdima=\dimen140
+\caption@indent=\dimen141
+\caption@parindent=\dimen142
+\caption@hangindent=\dimen143
+)
+\c@ContinuedFloat=\count107
+)
+\c@KVtest=\count108
+\sf@farskip=\skip55
+\sf@captopadj=\dimen144
+\sf@capskip=\skip56
+\sf@nearskip=\skip57
+\c@subfigure=\count109
+\c@subfigure@save=\count110
+\c@lofdepth=\count111
+\c@subtable=\count112
+\c@subtable@save=\count113
+\c@lotdepth=\count114
+\sf@top=\skip58
+\sf@bottom=\skip59
+) (./fancyhdr.sty
+\fancy@headwidth=\skip60
+\f@ncyO@elh=\skip61
+\f@ncyO@erh=\skip62
+\f@ncyO@olh=\skip63
+\f@ncyO@orh=\skip64
+\f@ncyO@elf=\skip65
+\f@ncyO@erf=\skip66
+\f@ncyO@olf=\skip67
+\f@ncyO@orf=\skip68
+)
+(c:/texlive/2014/texmf-dist/tex/latex/sectsty/sectsty.sty
+Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
+les
+)
+(c:/texlive/2014/texmf-dist/tex/latex/pstricks-add/pstricks-add.sty
+(c:/texlive/2014/texmf-dist/tex/latex/pstricks/pstricks.sty
+Package: pstricks 2013/12/12 v0.60 LaTeX wrapper for `PSTricks' (RN,HV)
+
+(c:/texlive/2014/texmf-dist/tex/generic/pstricks/pstricks.tex
+(c:/texlive/2014/texmf-dist/tex/generic/xkeyval/pst-xkey.tex
+File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
+
+(c:/texlive/2014/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/05/25 v2.7 package option processing (HA)
+
+(c:/texlive/2014/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(c:/texlive/2014/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks33
+\XKV@tempa@toks=\toks34
+)
+\XKV@depth=\count115
+File: xkeyval.tex 2014/05/25 v2.7 key=value parser (HA)
+)))
+(c:/texlive/2014/texmf-dist/tex/generic/pstricks/pst-fp.tex
+`pst-fp' v0.05, 2010/01/17 (hv)
+\pstFP@xs=\count116
+\pstFP@xia=\count117
+\pstFP@xib=\count118
+\pstFP@xfa=\count119
+\pstFP@xfb=\count120
+\pstFP@rega=\count121
+\pstFP@regb=\count122
+\pstFP@regs=\count123
+\pstFP@times=\count124
+)
+(c:/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks35
+\pgfutil@tempdima=\dimen145
+\pgfutil@tempdimb=\dimen146
+
+(c:/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)
+) (c:/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks36
+\pgfkeys@temptoks=\toks37
+
+(c:/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks38
+)) (c:/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+(c:/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(c:/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(c:/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex
+\pgf@x=\dimen147
+\pgf@xa=\dimen148
+\pgf@xb=\dimen149
+\pgf@xc=\dimen150
+\pgf@y=\dimen151
+\pgf@ya=\dimen152
+\pgf@yb=\dimen153
+\pgf@yc=\dimen154
+\c@pgf@counta=\count125
+\c@pgf@countb=\count126
+\c@pgf@countc=\count127
+\c@pgf@countd=\count128
+\pgfutil@tempcnta=\count129
+\pgfutil@tempcntb=\count130
+)
+(c:/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen155
+\pgfmath@count=\count131
+\pgfmath@box=\box28
+\pgfmath@toks=\toks39
+\pgfmath@stack@operand=\toks40
+\pgfmath@stack@operation=\toks41
+)
+(c:/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(c:/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.te
+x)
+(c:/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric
+.code.tex)
+(c:/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.t
+ex)
+(c:/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.co
+de.tex)
+(c:/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
+)
+(c:/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.te
+x)
+(c:/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
+)
+(c:/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithm
+etics.code.tex)))
+(c:/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count132
+))
+\pgffor@iter=\dimen156
+\pgffor@skip=\dimen157
+\pgffor@stack=\toks42
+\pgffor@toks=\toks43
+)
+\psLoopIndex=\count133
+
+`PSTricks' v2.56  <2014/07/31> (tvz)
+\pst@dima=\dimen158
+\pst@dimb=\dimen159
+\pst@dimc=\dimen160
+\pst@dimd=\dimen161
+\pst@dimg=\dimen162
+\pst@dimh=\dimen163
+\pst@dimm=\dimen164
+\pst@dimn=\dimen165
+\pst@dimo=\dimen166
+\pst@dimp=\dimen167
+\pst@hbox=\box29
+\pst@ibox=\box30
+\pst@boxg=\box31
+\pst@cnta=\count134
+\pst@cntb=\count135
+\pst@cntc=\count136
+\pst@cntd=\count137
+\pst@cntg=\count138
+\pst@cnth=\count139
+\pst@cntm=\count140
+\pst@cntn=\count141
+\pst@cnto=\count142
+\pst@cntp=\count143
+\@zero=\count144
+\pst@toks=\toks44
+(c:/texlive/2014/texmf-dist/tex/generic/pstricks/pstricks.con)
+\psunit=\dimen168
+\psxunit=\dimen169
+\psyunit=\dimen170
+\pst@C@@rType=\count145
+\pslinewidth=\dimen171
+\psk@startLW=\dimen172
+\psk@endLW=\dimen173
+\pst@customdefs=\toks45
+\pslinearc=\dimen174
+\pst@symbolStep=\dimen175
+\pst@symbolWidth=\dimen176
+\pst@symbolLinewidth=\dimen177
+\everypsbox=\toks46
+\psframesep=\dimen178
+\pslabelsep=\dimen179
+\sh@wgridXunit=\dimen180
+\sh@wgridYunit=\dimen181
+\pst@shift=\dimen182
+)
+File: pstricks.tex 2014/07/31 v2.56 `PSTricks' (tvz,hv)
+
+(c:/texlive/2014/texmf-dist/tex/generic/pstricks/pst-fp.tex)
+File: pst-fp.tex 2014/07/31 v2.56 `PST-fp' (hv)
+
+(c:/texlive/2014/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(c:/texlive/2014/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+))
+(c:/texlive/2014/texmf-dist/tex/latex/pst-plot/pst-plot.sty
+Package: pst-plot 2011/06/05 v1.00 LaTeX wrapper for `pst-plot' (HV)
+
+(c:/texlive/2014/texmf-dist/tex/latex/xkeyval/pst-xkey.sty
+Package: pst-xkey 2005/11/25 v1.6 package wrapper for pst-xkey.tex (HA)
+)
+(c:/texlive/2014/texmf-dist/tex/latex/multido/multido.sty
+Package: multido 2004/05/17 package wrapper for PSTricks `multido.tex', (HV/RN)
+
+
+(c:/texlive/2014/texmf-dist/tex/generic/multido/multido.tex
+ v1.42, 2010/05/14 <tvz>
+\multido@count=\count146
+\multidocount=\count147
+\multido@stuff=\toks47
+)
+File: multido.tex 2010/05/14 v1.42 `multido' (tvz,hv)
+)
+Package: pst-plot 2011/04/13 package wrapper for pst-plot.tex (hv)
+
+(c:/texlive/2014/texmf-dist/tex/generic/pst-plot/pst-plot.tex
+(c:/texlive/2014/texmf-dist/tex/generic/pst-tools/pst-tools.tex
+`PST-tools' v0.05, 2014/05/12 (hv))  v1.68, 2014/08/04 (tvz,hv)
+\pstRadUnit=\dimen183
+\pstRadUnitInv=\dimen184
+\pst@linecnt=\count148
+\RCD@file=\read2
+\psxlabelsep=\dimen185
+\psylabelsep=\dimen186
+\psk@subticksize=\dimen187
+\pst@xticksizeA=\dimen188
+\pst@xticksizeB=\dimen189
+\pst@xticksizeC=\dimen190
+\pst@yticksizeA=\dimen191
+\pst@yticksizeB=\dimen192
+\pst@yticksizeC=\dimen193
+\@digitcounter=\count149
+\psk@llx=\dimen194
+\psk@lly=\dimen195
+\psk@urx=\dimen196
+\psk@ury=\dimen197
+\pst@xunit=\dimen198
+\pst@yunit=\dimen199
+)
+File: pst-plot.tex 2014/08/04 1.68 `pst-plot' (tvz,hv)
+)
+(c:/texlive/2014/texmf-dist/tex/latex/pst-node/pst-node.sty
+Package: pst-node 2012/09/18 v1.01 LaTeX wrapper for `pst-node' (HV)
+Package: pst-node 2010/04/22 package wrapper for pst-node.tex
+
+(c:/texlive/2014/texmf-dist/tex/generic/pst-node/pst-node.tex
+ v1.35, 2014/08/04
+\psrow=\count150
+\pscol=\count151
+\psmatrixcnt=\count152
+\psrowsep=\skip69
+\pscolsep=\skip70
+\pst@args=\count153
+\num@pts=\count154
+\pst@argcnt=\count155
+)
+File: pst-node.tex 2014/08/04 1.35 `pst-node' (tvz,hv)
+) (c:/texlive/2014/texmf-dist/tex/latex/pst-3d/pst-3d.sty
+Package: pst-3d 2009/07/28 package wrapper for pst-3d.tex (hv)
+
+(c:/texlive/2014/texmf-dist/tex/generic/pst-3d/pst-3d.tex
+`PST-3d' v1.11, 2010/02/14 (tvz))
+File: pst-3d.tex 2010/02/14 v1.11 `PST-3d' (hv)
+)
+(c:/texlive/2014/texmf-dist/tex/latex/pst-math/pst-math.sty
+Package: pst-math 2014/07/30 package wrapper for PSTricks pst-math.tex
+
+(c:/texlive/2014/texmf-dist/tex/generic/pst-math/pst-math.tex
+`pst-math' v0.63 , (CJ,hv))
+File: pst-math.tex 2014/07/30 v0.63 `PST-math' (hv)
+)
+Package: pstricks-add 2010/02/11 v. 0.14 package wrapper for pstricks-add.tex (
+hv)
+
+(c:/texlive/2014/texmf-dist/tex/generic/pstricks-add/pstricks-add.tex
+`pstricks-add' v3.75, 2014/07/22 (dr,hv)
+\psparallelogramsep=\dimen200
+\pshooklength=\dimen201
+\pshookwidth=\dimen202
+\pst@cntC=\count156
+\chart@ColorIndex=\dimen203
+\chart@ColorStep=\dimen204
+\pst@chartHeight=\dimen205
+\pst@chartStackDepth=\dimen206
+\pst@chartStackWidth=\dimen207
+\chart@Toggle=\count157
+\psVectorCtr=\count158
+)
+File: pstricks-add.tex 2014/07/22 v3.75 `PSTricks-add' (hv)
+Package pstricks-add Info: Local config file pstricks-add.cfg used on input lin
+e 20.
+
+(c:/texlive/2014/texmf-dist/tex/latex/pstricks-add/pstricks-add.cfg
+File: pstricks-add.cfg 2005/01/10 v0.1 addtional user stuff (hv)
+))
+(c:/texlive/2014/texmf-dist/tex/latex/auto-pst-pdf/auto-pst-pdf.sty
+Package: auto-pst-pdf 2009/04/26 v0.6 Wrapper for pst-pdf
+
+(c:/texlive/2014/texmf-dist/tex/latex/ifplatform/ifplatform.sty
+Package: ifplatform 2010/10/22 v0.4 Testing for the operating system
+
+(c:/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(c:/texlive/2014/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(c:/texlive/2014/texmf-dist/tex/generic/oberdiek/catchfile.sty
+Package: catchfile 2011/03/01 v1.6 Catch the contents of a file (HO)
+
+(c:/texlive/2014/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+\c@app@runs=\count159
+runsystem(echo " ")...executed.
+
+runsystem(echo "-------------------------------------------------")...executed.
+
+runsystem(echo "auto-pst-pdf: Auxiliary LaTeX compilation")...executed.
+
+runsystem(echo "-------------------------------------------------")...executed.
+
+runsystem(del "TripletReport-pics.pdf")...executed.
+
+runsystem(latex -disable-write18 -jobname="TripletReport-autopp" -interaction=b
+atchmode  "\let \APPmakepictures \empty \input  TripletReport.tex")...executed.
+
+runsystem(dvips -Ppdf -o "TripletReport-autopp.ps" "TripletReport-autopp.dvi").
+..executed.
+
+runsystem(ps2pdf  "TripletReport-autopp.ps" "TripletReport-autopp.pdf")...execu
+ted.
+
+runsystem(pdfcrop  "TripletReport-autopp.pdf" "TripletReport-pics.pdf")...execu
+ted.
+
+runsystem(del "TripletReport-autopp.log")...executed.
+
+runsystem(del "TripletReport-autopp.dvi")...executed.
+
+runsystem(del "TripletReport-autopp.ps")...executed.
+
+runsystem(del "TripletReport-autopp.pdf")...executed.
+
+runsystem(echo "-------------------------------------------------")...executed.
+
+runsystem(echo "auto-pst-pdf: End auxiliary LaTeX compilation")...executed.
+
+runsystem(echo "-------------------------------------------------")...executed.
+
+
+(c:/texlive/2014/texmf-dist/tex/latex/pst-pdf/pst-pdf.sty
+Package: pst-pdf 2008/10/09 v1.1v PS graphics for pdfLaTeX (RN,HjG)
+\c@pspicture=\count160
+Package pst-pdf Info: MODE: 1 (pdfTeX mode) on input line 214.
+\ppf@output=\toks48
+
+(c:/texlive/2014/texmf-dist/tex/latex/preview/preview.sty
+Package: preview 2010/02/14 11.86 (AUCTeX/preview-latex)
+\pr@snippet=\count161
+\pr@box=\box32
+\pr@output=\toks49
+)
+(c:/texlive/2014/texmf-dist/tex/latex/graphics/dvips.def
+File: dvips.def 2014/04/23 v3.0j Driver-dependant file (DPC,SPQR)
+)
+(c:/texlive/2014/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(c:/texlive/2014/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))))
+(./TripletReport.aux)
+\openout1 = `TripletReport.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(89.62709pt, 418.25368pt, 89.6271pt)
+* v-part:(T,H,B)=(101.40665pt, 591.5302pt, 152.11pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=418.25368pt
+* \textheight=591.5302pt
+* \oddsidemargin=17.3571pt
+* \evensidemargin=17.3571pt
+* \topmargin=-7.86334pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(c:/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count162
+\scratchdimen=\dimen208
+\scratchbox=\box33
+\nofMPsegments=\count163
+\nofMParguments=\count164
+\everyMPshowfont=\toks50
+\MPscratchCnt=\count165
+\MPscratchDim=\dimen209
+\MPnumerator=\count166
+\makeMPintoPDFobject=\count167
+\everyMPtoPDFconversion=\toks51
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+Preview: Fontsize 10pt
+Preview: PDFoutput 1
+LaTeX Font Info:    Try loading font information for U+msa on input line 57.
+(c:/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 57.
+
+(c:/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+<TripletReport-pics.pdf, id=2, page=1, 242.9075pt x 297.11pt>
+File: TripletReport-pics.pdf Graphic file (type pdf)
+
+<use TripletReport-pics.pdf, page 1>
+Package pdftex.def Info: TripletReport-pics.pdf, page1 used on input line 109.
+(pdftex.def)             Requested size: 242.90689pt x 297.10927pt.
+ [1
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!{c:/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdft
+ex.map}] [2 <./TripletReport-pics.pdf>] (./TripletReport.aux) ) 
+Here is how much of TeX's memory you used:
+ 13743 strings out of 493108
+ 230216 string characters out of 6138447
+ 352033 words of memory out of 5000000
+ 16958 multiletter control sequences out of 15000+600000
+ 12743 words of font info for 49 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 44i,11n,75p,597b,425s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2014
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2014/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2014/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr12.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr17.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.
+pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/t
+exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/20
+14/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2014/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on TripletReport.pdf (2 pages, 107014 bytes).
+PDF statistics:
+ 75 PDF objects out of 1000 (max. 8388607)
+ 51 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+
