@@ -120,7 +120,13 @@ In order to output a comparison operator from the model,
 %In order to distinguish between the two distances, and allow training,
 a SoftMax function is applied on both outputs - effectively creating a ratio measure.
 %, and serves as a comparison operator.\\
-Similarly to traditional convolutional-networks, training is done by simple SGD on a negative-log-likelihood loss with regard to the 2-class problem.
+Similarly to traditional convolutional-networks, training is done by simple SGD on a negative-log-likelihood loss with regard to the 2-class problem. We later examined that better results are achieved when the loss function is replaced by a simple MSE on the soft-max result, compared to the $(0,1)$ vector, so that the loss is 
+$$Loss(d_{+},d_{-}) = \|(d_{+} -0)+(d_{-}-1)\|_2^2$$
+where
+$$ d_{+} = \frac{e^{\|Net(x)-Net(x^{+})\|_2}}{e^{\|Net(x)-Net(x^{+})\|_2}+e^{\|Net(x)-Net(x^{-})\|_2}}$$
+and
+$$ d_{-} = \frac{e^{\|Net(x)-Net(x^{-})\|_2}}{e^{\|Net(x)-Net(x^{+})\|_2}+e^{\|Net(x)-Net(x^{-})\|_2}}$$
+We note that $Loss(d_{+},d_{-})  \to 0$ iff $\frac{\|Net(x)-Net(x^{+})\|}{\|Net(x)-Net(x^{-})\|} \to 0$, which is the required objective. \\
 By using the same shared parameters network, we allow the back-propagation algorithm to update the model with regard to all three samples simultaneously.
 
 \section{Tests and results}
