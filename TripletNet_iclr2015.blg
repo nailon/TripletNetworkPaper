@@ -3,56 +3,58 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: TripletNet_iclr2015.aux
 The style file: iclr2015.bst
 Database file #1: iclr2015.bib
-Repeated entry---line 222 of file iclr2015.bib
+Repeated entry---line 234 of file iclr2015.bib
  : @article{Bengio2013
  :                    ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 613 of file iclr2015.bib
+I was expecting a `,' or a `}'---line 625 of file iclr2015.bib
  :   
  :   title={Learning multiple layers of features from tiny images},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for ""
 Warning--there's a number but no series in collobert2011torch7
-You've used 23 entries,
+Warning--empty booktitle in netzer2011reading
+Warning--empty year in netzer2011reading
+Warning--empty year in netzer2011reading
+You've used 25 entries,
             2773 wiz_defined-function locations,
-            747 strings with 9647 characters,
-and the built_in function-call counts, 12715 in all, are:
-= -- 1121
-> -- 863
-< -- 19
-+ -- 290
-- -- 266
-* -- 1047
-:= -- 1932
-add.period$ -- 82
-call.type$ -- 23
-change.case$ -- 157
-chr.to.int$ -- 22
-cite$ -- 47
-duplicate$ -- 555
-empty$ -- 938
-format.name$ -- 297
-if$ -- 2692
+            755 strings with 10035 characters,
+and the built_in function-call counts, 13921 in all, are:
+= -- 1219
+> -- 950
+< -- 20
++ -- 319
+- -- 293
+* -- 1149
+:= -- 2106
+add.period$ -- 87
+call.type$ -- 25
+change.case$ -- 172
+chr.to.int$ -- 24
+cite$ -- 54
+duplicate$ -- 611
+empty$ -- 1031
+format.name$ -- 326
+if$ -- 2949
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 21
-newline$ -- 133
-num.names$ -- 94
-pop$ -- 320
+missing$ -- 23
+newline$ -- 142
+num.names$ -- 102
+pop$ -- 363
 preamble$ -- 1
-purify$ -- 134
+purify$ -- 147
 quote$ -- 0
-skip$ -- 472
+skip$ -- 514
 stack$ -- 0
-substring$ -- 387
-swap$ -- 108
-text.length$ -- 12
+substring$ -- 423
+swap$ -- 120
+text.length$ -- 13
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 253
-warning$ -- 1
-while$ -- 100
+type$ -- 275
+warning$ -- 4
+while$ -- 109
 width$ -- 0
-write$ -- 325
+write$ -- 347
 (There were 2 error messages)

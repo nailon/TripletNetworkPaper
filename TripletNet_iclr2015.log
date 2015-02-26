@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.2.9)  26 FEB 2015 16:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.2.9)  26 FEB 2015 16:49
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -400,15 +400,8 @@ File: TripletNet_scheme.pdf Graphic file (type pdf)
 Package pdftex.def Info: TripletNet_scheme.pdf used on input line 106.
 (pdftex.def)             Requested size: 198.7425pt x 243.08774pt.
  [2 <./TripletNet_scheme.pdf>]
-
-Package natbib Warning: Citation `netzer2011reading' on page 3 undefined on inp
-ut line 134.
-
-
-Package natbib Warning: Citation `coates2011analysis' on page 3 undefined on in
-put line 135.
-
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 141.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
@@ -428,7 +421,7 @@ df>
 (epstopdf)             \includegraphics on input line 183.
 Package epstopdf Info: Output file is already uptodate.
 
-<EuclideanRepresentation-eps-converted-to.pdf, id=162, 1928.20375pt x 1103.1212
+<EuclideanRepresentation-eps-converted-to.pdf, id=168, 1928.20375pt x 1103.1212
 5pt>
 File: EuclideanRepresentation-eps-converted-to.pdf Graphic file (type pdf)
  <use EuclideanRepresentation-eps-converted-to.pdf>
@@ -449,7 +442,7 @@ Package epstopdf Info: Source file: <Rep.eps>
 p.eps>
 (epstopdf)             \includegraphics on input line 189.
 Package epstopdf Info: Output file is already uptodate.
-<Rep-eps-converted-to.pdf, id=163, 1489.565pt x 899.36pt>
+<Rep-eps-converted-to.pdf, id=169, 1489.565pt x 899.36pt>
 File: Rep-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Rep-eps-converted-to.pdf>
@@ -469,7 +462,7 @@ Package epstopdf Info: Source file: <mnist-rep.eps>
 pdf mnist-rep.eps>
 (epstopdf)             \includegraphics on input line 195.
 Package epstopdf Info: Output file is already uptodate.
-<mnist-rep-eps-converted-to.pdf, id=164, 1489.565pt x 899.36pt>
+<mnist-rep-eps-converted-to.pdf, id=170, 1489.565pt x 899.36pt>
 File: mnist-rep-eps-converted-to.pdf Graphic file (type pdf)
 
 <use mnist-rep-eps-converted-to.pdf>
@@ -490,7 +483,7 @@ Package epstopdf Info: Source file: <svhn-rep.eps>
 df svhn-rep.eps>
 (epstopdf)             \includegraphics on input line 201.
 Package epstopdf Info: Output file is already uptodate.
-<svhn-rep-eps-converted-to.pdf, id=165, 1489.565pt x 899.36pt>
+<svhn-rep-eps-converted-to.pdf, id=171, 1489.565pt x 899.36pt>
 File: svhn-rep-eps-converted-to.pdf Graphic file (type pdf)
 
 <use svhn-rep-eps-converted-to.pdf>
@@ -501,10 +494,8 @@ Package pdftex.def Info: svhn-rep-eps-converted-to.pdf used on input line 201.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [4] [5 <./EuclideanRepresentation-eps-converted-to.pdf> <./Rep-eps-converted-to
-.pdf>] (./TripletNet_iclr2015.bbl
-Underfull \vbox (badness 7832) has occurred while \output is active []
-
- [6 <./mnist-rep-eps-converted-to.pdf> <./svhn-rep-eps-converted-to.pdf>]
+.pdf>] [6 <./mnist-rep-eps-converted-to.pdf> <./svhn-rep-eps-converted-to.pdf>]
+(./TripletNet_iclr2015.bbl
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ú in font ptmr7t!
@@ -512,11 +503,8 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
  [7])
-
-Package natbib Warning: There were undefined citations.
-
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 237.
-[8]
+ [8]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 237.
  (./TripletNet_iclr2015.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 237.
@@ -526,13 +514,13 @@ Package rerunfilecheck Info: File `TripletNet_iclr2015.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 237.
  ) 
 Here is how much of TeX's memory you used:
- 7245 strings out of 495021
- 102428 string characters out of 6181345
- 195358 words of memory out of 5000000
- 10302 multiletter control sequences out of 15000+600000
+ 7251 strings out of 495021
+ 102587 string characters out of 6181345
+ 194481 words of memory out of 5000000
+ 10306 multiletter control sequences out of 15000+600000
  20656 words of font info for 43 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 37i,12n,45p,442b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,12n,45p,559b,463s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
@@ -544,10 +532,10 @@ msfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on TripletNet_iclr2015.pdf (8 pages, 6568557 bytes).
+Output written on TripletNet_iclr2015.pdf (8 pages, 6568248 bytes).
 PDF statistics:
- 292 PDF objects out of 1000 (max. 8388607)
- 252 compressed objects within 3 object streams
- 51 named destinations out of 1000 (max. 500000)
+ 298 PDF objects out of 1000 (max. 8388607)
+ 258 compressed objects within 3 object streams
+ 53 named destinations out of 1000 (max. 500000)
  114 words of extra memory for PDF output out of 10000 (max. 10000000)
 
