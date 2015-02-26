@@ -1,4 +1,4 @@
-\begin{thebibliography}{18}
+\begin{thebibliography}{19}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -121,6 +121,13 @@ Tamuz, Omer, Liu, Ce, Belongie, Serge, Shamir, Ohad, and Kalai, Adam.
   28th International Conference on Machine Learning (ICML-11)}, ICML '11, pp.\
   673--680, New York, NY, USA, June 2011. ACM.
 \newblock ISBN 978-1-4503-0619-5.
+
+\bibitem[Wang et~al.(2014)Wang, Song, Leung, Rosenberg, Wang, Philbin, Chen,
+  and Wu]{WangSLRWPCW2014}
+Wang, Jiang, Song, Yang, Leung, Thomas, Rosenberg, Chuck, Wang, Jingbin,
+  Philbin, James, Chen, Bo, and Wu, Ying.
+\newblock Learning fine-grained image similarity with deep ranking.
+\newblock In \emph{CVPR}, 2014.
 
 \bibitem[Zeiler \& Fergus(2013{\natexlab{a}})Zeiler and Fergus]{Zeiler2013}
 Zeiler, Matthew~D and Fergus, Rob.
