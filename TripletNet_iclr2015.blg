@@ -1,14 +1,15 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: TripletNet_iclr2015.aux
 The style file: iclr2015.bst
 Database file #1: iclr2015.bib
-Repeated entry---line 184 of file iclr2015.bib
+Repeated entry---line 190 of file iclr2015.bib
  : @article{Bengio2013
  :                    ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 575 of file iclr2015.bib
+I was expecting a `,' or a `}'---line 581 of file iclr2015.bib
  :   
  :   title={Learning multiple layers of features from tiny images},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "???"
 Warning--there's a number but no series in collobert2011torch7
 (There were 2 error messages)
