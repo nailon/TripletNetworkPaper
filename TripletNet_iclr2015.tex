@@ -147,16 +147,18 @@ Training is done by SGD, with initial learning-rate of 0.1 that is manually redu
 After training for ~30 epochs, the network reached a fixed error of 6\% (error is over triplet comparisons). We then used the embedding network to extract features from the full dataset. By using a simple multi-class SVM model with these representations, an accuracy of 87.1\% on the test set was achieved for the full 10-class classification task.
 This result is comparable to state-of-the-art results with deep learning models, without using any artificial data augmentation (\citet{zeiler2013stochastic,goodfellow2013maxout,LinCY13}). We conjecture that data augmentation techniques (such as translations, mirroring and noising) may provide similar benefits to those described in previous works.\\
 Another side-affect noticed, is that the representation seems to be sparse - about 25\% non-zero values. This is very helpful when used later as features for classification both computationally and with respect to accuracy, as each class is characterised by only a few non zero elements.
-\begin{center}
-    \begin{tabular}{ | l | l | l | p{5cm} |}
+\begin{figure}[h]
+
+    \begin{tabular}{ | c | c | c | p{8cm} |}
     \hline
-    Dataset & TripletNet   & SiameseNet  & Best known result\\ \hline
+    Dataset & TripletNet   & SiameseNet  & Best known result (with no data augmentation)       \\ \hline
     Mnist & 99.54\% & -& 99.61\% \citet{mairal2014convolutional,lee2014deeply}  \\ \hline
     Cifar10 & 87.1\% & - & 90.22\% \citet{lee2014deeply}  \\ \hline
     SVHN &  95.37\% & -& 98.18\% \citet{lee2014deeply} \\ \hline
     STL10& 70.67\%& - & 67.9\% \citet{lin2014stable}\\ \hline
     \end{tabular}
-\end{center}
+     \caption{Results on various datasets (no data augmentation)}\label{results}
+     \end{figure}
 \subsection{2d visualization of features}
 In order to examine our main premise, which is that the network embeds the images into a representation with meaningful properties, we
 use PCA to project the embedding into 2d euclidean space which can be easily visualized (figure \ref{EuclideanRepresentation}).
