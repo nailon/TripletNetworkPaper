@@ -127,18 +127,21 @@ By using the same shared parameters network, we allow the back-propagation algor
  The Triplet network was implemented and trained using the Torch7 environment (\citet{collobert2011torch7}).
 \subsection{Datasets}
 
-The Triplet Network was trained on two datasets.  The first is \emph{Cifar10}  (\citet{krizhevsky2009learning}), consisting of 60000 32x32 color images of 10 classes (of which 50000 are used for training only, and 10000 for test only). No data augmentation or whitening was applied, and the only preprocessing was a global normalization to zero mean and unit variance.
-Each training instance is a uniformly sampled set of 3 images, 2 of which are of the same class ($x$ and $x^{+}$), and the third ($x^{-}$) is of a different class. Each training epoch consists of 640,000 such instances (randomly chosen each epoch), and a fixed set of 64,000 instances used for test. We emphasize that each test instance involves 3 images from the set of 10000 images which was excluded from training.
-The second dataset is the original \emph{MNIST} (\citet{lecun1998gradient}) consisting of 60000 28x28 grayscale images of handwritten digits 0-9, and a corrosponding set of 10000 test images.
+The Triplet Network was trained on 4 datasets.  The first is \emph{Cifar10}  (\citet{krizhevsky2009learning}), consisting of 60000 32x32 color images of 10 classes (of which 50000 are used for training only, and 10000 for test only). 
+The second dataset is the original \emph{MNIST} (\citet{lecun1998gradient}) consisting of 60000 28x28 gray-scale images of handwritten digits 0-9, and a corresponding set of 10000 test images.
 Unfortunately we could not use the dataset of the first (as far as we know) work to use an architecture similar
 to our triplet network, namely that of \cite{WangSLRWPCW2014}.
+We also used the \emph{Street-View-House-Numbers (SVHN)} \citet{netzer2011reading} which consists of ~600,000 32x32 color images of house-number digits 0-9.
+The fourth dataset is  \emph{STL10} \citet{coates2011analysis}  which is similar to Cifar10 and consists of 10 object classes, only with 5000 training images (instead of 50,000 in Cifar) and a bigger 96x96 image size.
 
+No data augmentation or whitening was applied, and the only preprocessing was a global normalization to zero mean and unit variance.
+Each training instance is a uniformly sampled set of 3 images, 2 of which are of the same class ($x$ and $x^{+}$), and the third ($x^{-}$) is of a different class. Each training epoch consists of 640,000 such instances (randomly chosen each epoch), and a fixed set of 64,000 instances used for test. We emphasize that each test instance involves 3 images from the set of test images which was excluded from training.
 \subsection{Embedding Net}
 The embedding net used is a convolutional network, consisting of 3 convolutional and 2x2 max-pooling layers, followed by a fourth convolutional layer. A \emph{ReLU} non-linearity is applied between two consecutive layers.
 Network configuration (ordered from input to output) consists of filter sizes \{5,3,3,2\}, and feature map dimensions \{3,64,128,256,128\} where a 128 vector is the final embedded representation of the network. Usually in convolutional networks, a subsequent fully-connected
 layer is used for classification. In our net this layer is removed, as we are interested in a feature embedding only.
 
-This network was used both for Cifar and SVHN datasets. The network used for MNIST was a smaller version consisting of smaller feature map sizes \{1,32,64,128\}.
+This network was used for Cifar and SVHN datasets. The STL 10 network is identical, only with stride=3 for the first layer, to allow the bigger input size. The network used for MNIST was a smaller version consisting of smaller feature map sizes \{1,32,64,128\}.
 
 
 
