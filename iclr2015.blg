@@ -1,9 +1,9 @@
-This is BibTeX, Version 0.99d (TeX Live 2014/W32TeX)
+This is BibTeX, Version 0.99d (TeX Live 2014/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: iclr2015.aux
 The style file: iclr2015.bst
 Database file #1: iclr2015.bib
-I was expecting a `,' or a `}'---line 575 of file iclr2015.bib
+I was expecting a `,' or a `}'---line 600 of file iclr2015.bib
  :   
  :   title={Learning multiple layers of features from tiny images},
 (Error may have been on previous line)

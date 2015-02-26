@@ -129,25 +129,34 @@ By using the same shared parameters network, we allow the back-propagation algor
 
 The Triplet Network was trained on two datasets.  The first is \emph{Cifar10}  (\citet{krizhevsky2009learning}), consisting of 60000 32x32 color images of 10 classes (of which 50000 are used for training only, and 10000 for test only). No data augmentation or whitening was applied, and the only preprocessing was a global normalization to zero mean and unit variance.
 Each training instance is a uniformly sampled set of 3 images, 2 of which are of the same class ($x$ and $x^{+}$), and the third ($x^{-}$) is of a different class. Each training epoch consists of 640,000 such instances (randomly chosen each epoch), and a fixed set of 64,000 instances used for test. We emphasize that each test instance involves 3 images from the set of 10000 images which was excluded from training.
-The second dataset is \emph{MNIST} (\citet{???}) consisting of ......
+The second dataset is the original \emph{MNIST} (\citet{lecun1998gradient}) consisting of 60000 28x28 grayscale images of handwritten digits 0-9, and a corrosponding set of 10000 test images.
 Unfortunately we could not use the dataset of the first (as far as we know) work to use an architecture similar
-to our triplet network, namely that of \cite{WangSLRWPCW2014}
+to our triplet network, namely that of \cite{WangSLRWPCW2014}.
 
 \subsection{Embedding Net}
 The embedding net used is a convolutional network, consisting of 3 convolutional and 2x2 max-pooling layers, followed by a fourth convolutional layer. A \emph{ReLU} non-linearity is applied between two consecutive layers.
 Network configuration (ordered from input to output) consists of filter sizes \{5,3,3,2\}, and feature map dimensions \{3,64,128,256,128\} where a 128 vector is the final embedded representation of the network. Usually in convolutional networks, a subsequent fully-connected
 layer is used for classification. In our net this layer is removed, as we are interested in a feature embedding only.
 
+This network was used both for Cifar and SVHN datasets. The network used for MNIST was a smaller version consisting of smaller feature map sizes \{1,32,64,128\}.
 
-????????????? did you use the same network for both????????????????????
+
 
 \subsection{Results}
-????????????? need of description for MNIST as well?????????????????
 Training is done by SGD, with initial learning-rate of 0.1 that is manually reduced when test accuracy saturates. We used a momentum value of 0.9. We also used the Dropout regularization technique to avoid over-fitting.
-After training for ~30 epochs, the network reached a fixed error of 6\% (error is over triplet comparisons). We then used the embedding network to extract features from the full dataset. By using a simple multi-class SVM model with these representations, an accuracy of 84\% on the test set was achieved for the full 10-class classification task.
+After training for ~30 epochs, the network reached a fixed error of 6\% (error is over triplet comparisons). We then used the embedding network to extract features from the full dataset. By using a simple multi-class SVM model with these representations, an accuracy of 87.1\% on the test set was achieved for the full 10-class classification task.
 This result is comparable to state-of-the-art results with deep learning models, without using any artificial data augmentation (\citet{zeiler2013stochastic,goodfellow2013maxout,LinCY13}). We conjecture that data augmentation techniques (such as translations, mirroring and noising) may provide similar benefits to those described in previous works.\\
 Another side-affect noticed, is that the representation seems to be sparse - about 25\% non-zero values. This is very helpful when used later as features for classification both computationally and with respect to accuracy, as each class is characterised by only a few non zero elements.
-
+\begin{center}
+    \begin{tabular}{ | l | l | l | p{5cm} |}
+    \hline
+    Dataset & TripletNet   & SiameseNet  & Best known result\\ \hline
+    Mnist & 99.54\% & -& 99.61\% \citet{mairal2014convolutional,lee2014deeply}  \\ \hline
+    Cifar10 & 87.1\% & - & 90.22\% \citet{lee2014deeply}  \\ \hline
+    SVHN &  95.37\% & -& 98.18\% \citet{lee2014deeply} \\ \hline
+    STL10& 70.67\%& - & 67.9\% \citet{lin2014stable}\\ \hline
+    \end{tabular}
+\end{center}
 \subsection{2d visualization of features}
 In order to examine our main premise, which is that the network embeds the images into a representation with meaningful properties, we
 use PCA to project the embedding into 2d euclidean space which can be easily visualized (figure \ref{EuclideanRepresentation}).
@@ -170,7 +179,24 @@ conjecture to future work.
 \end{center}
    \caption{Euclidean 2d representation of embedded test data for CIFAR10}\label{EuclideanRepresentation}
 \end{figure}
-
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\linewidth]{Rep.eps}
+\end{center}
+   \caption{Euclidean 2d representation of embedded test data for CIFAR10}\label{TripletRepCIFAR10}
+\end{figure}
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\linewidth]{mnist-rep.eps}
+\end{center}
+   \caption{Euclidean 2d representation of embedded test data for MNIST}\label{TripletRepMNIST}
+\end{figure}
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\linewidth]{svhn-rep.eps}
+\end{center}
+   \caption{Euclidean 2d representation of embedded test data for SVHN}\label{TripletRepSVHN}
+\end{figure}
 %\begin{figure}[h]
 %\begin{center}
 %\includegraphics[width=0.8\linewidth]{confusion.eps}

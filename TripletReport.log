@@ -1,14 +1,14 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/W32TeX) (preloaded format=pdflatex 2014.8.9)  19 DEC 2014 14:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.2.9)  26 FEB 2015 15:30
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
 **TripletReport.tex
 (./TripletReport.tex
 LaTeX2e <2014/05/01>
-Babel <3.9k> and hyphenation patterns for 79 languages loaded.
-(c:/texlive/2014/texmf-dist/tex/latex/base/article.cls
+Babel <3.9k> and hyphenation patterns for 2 languages loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(c:/texlive/2014/texmf-dist/tex/latex/base/size10.clo
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -23,19 +23,19 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(c:/texlive/2014/texmf-dist/tex/latex/base/inputenc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2014/04/30 v1.2b Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
-(c:/texlive/2014/texmf-dist/tex/latex/base/utf8.def
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-(c:/texlive/2014/texmf-dist/tex/latex/base/t1enc.dfu
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
 File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -185,7 +185,7 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-(c:/texlive/2014/texmf-dist/tex/latex/base/ot1enc.dfu
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
 File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -216,7 +216,7 @@ File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-(c:/texlive/2014/texmf-dist/tex/latex/base/omsenc.dfu
+(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
 File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -240,22 +240,22 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-(c:/texlive/2014/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-(c:/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
-(c:/texlive/2014/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-(c:/texlive/2014/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(c:/texlive/2014/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count87
@@ -271,27 +271,27 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks17
 )
-(c:/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(c:/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(c:/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(c:/texlive/2014/texmf-dist/tex/latex/latexconfig/graphics.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(c:/texlive/2014/texmf-dist/tex/latex/pdftex-def/pdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(c:/texlive/2014/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-(c:/texlive/2014/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count90
@@ -299,24 +299,24 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen111
 \Gin@req@width=\dimen112
 )
-(c:/texlive/2014/texmf-dist/tex/latex/amsmath/amsmath.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-(c:/texlive/2014/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-(c:/texlive/2014/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks18
 \ex@=\dimen113
 ))
-(c:/texlive/2014/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen114
 )
-(c:/texlive/2014/texmf-dist/tex/latex/amsmath/amsopn.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count91
@@ -357,8 +357,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-(c:/texlive/2014/texmf-dist/tex/latex/amscls/amsthm.sty
-Package: amsthm 2009/07/02 v2.20.1
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2004/08/06 v2.20
 \thm@style=\toks23
 \thm@bodyfont=\toks24
 \thm@headfont=\toks25
@@ -369,17 +369,17 @@ Package: amsthm 2009/07/02 v2.20.1
 \thm@headsep=\skip48
 \dth@everypar=\toks28
 )
-(c:/texlive/2014/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(c:/texlive/2014/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(c:/texlive/2014/texmf-dist/tex/latex/booktabs/booktabs.sty
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen122
 \lightrulewidth=\dimen123
@@ -399,7 +399,7 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count106
 \@thisrulewidth=\dimen134
 )
-(c:/texlive/2014/texmf-dist/tex/latex/tools/array.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen135
 \extrarowheight=\dimen136
@@ -407,7 +407,7 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \extratabsurround=\skip49
 \backup@length=\skip50
 )
-(c:/texlive/2014/texmf-dist/tex/latex/paralist/paralist.sty
+(/usr/share/texlive/texmf-dist/tex/latex/paralist/paralist.sty
 Package: paralist 2013/06/09 v2.4 Extended list environments
 \pltopsep=\skip51
 \plpartopsep=\skip52
@@ -415,19 +415,19 @@ Package: paralist 2013/06/09 v2.4 Extended list environments
 \plparsep=\skip54
 \pl@lab=\toks30
 )
-(c:/texlive/2014/texmf-dist/tex/latex/tools/verbatim.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks31
 \verbatim@line=\toks32
 \verbatim@in@stream=\read1
 )
-(c:/texlive/2014/texmf-dist/tex/latex/subfig/subfig.sty
+(/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 
-(c:/texlive/2014/texmf-dist/tex/latex/caption/caption.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 
-(c:/texlive/2014/texmf-dist/tex/latex/caption/caption3.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
 \captionmargin=\dimen137
@@ -453,7 +453,8 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \c@lotdepth=\count114
 \sf@top=\skip58
 \sf@bottom=\skip59
-) (./fancyhdr.sty
+)
+(./fancyhdr.sty
 \fancy@headwidth=\skip60
 \f@ncyO@elh=\skip61
 \f@ncyO@erh=\skip62
@@ -463,31 +464,30 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \f@ncyO@erf=\skip66
 \f@ncyO@olf=\skip67
 \f@ncyO@orf=\skip68
-)
-(c:/texlive/2014/texmf-dist/tex/latex/sectsty/sectsty.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/sectsty/sectsty.sty
 Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
 les
 )
-(c:/texlive/2014/texmf-dist/tex/latex/pstricks-add/pstricks-add.sty
-(c:/texlive/2014/texmf-dist/tex/latex/pstricks/pstricks.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pstricks-add/pstricks-add.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pstricks/pstricks.sty
 Package: pstricks 2013/12/12 v0.60 LaTeX wrapper for `PSTricks' (RN,HV)
 
-(c:/texlive/2014/texmf-dist/tex/generic/pstricks/pstricks.tex
-(c:/texlive/2014/texmf-dist/tex/generic/xkeyval/pst-xkey.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks/pstricks.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/pst-xkey.tex
 File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
 
-(c:/texlive/2014/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2014/05/25 v2.7 package option processing (HA)
 
-(c:/texlive/2014/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(c:/texlive/2014/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks33
 \XKV@tempa@toks=\toks34
 )
 \XKV@depth=\count115
 File: xkeyval.tex 2014/05/25 v2.7 key=value parser (HA)
 )))
-(c:/texlive/2014/texmf-dist/tex/generic/pstricks/pst-fp.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks/pst-fp.tex
 `pst-fp' v0.05, 2010/01/17 (hv)
 \pstFP@xs=\count116
 \pstFP@xia=\count117
@@ -499,22 +499,23 @@ File: xkeyval.tex 2014/05/25 v2.7 key=value parser (HA)
 \pstFP@regs=\count123
 \pstFP@times=\count124
 )
-(c:/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks35
 \pgfutil@tempdima=\dimen145
 \pgfutil@tempdimb=\dimen146
 
-(c:/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)
-) (c:/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks36
 \pgfkeys@temptoks=\toks37
 
-(c:/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex
 \pgfkeys@tmptoks=\toks38
-)) (c:/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
-(c:/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
-(c:/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
-(c:/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex
 \pgf@x=\dimen147
 \pgf@xa=\dimen148
 \pgf@xb=\dimen149
@@ -530,7 +531,7 @@ File: xkeyval.tex 2014/05/25 v2.7 key=value parser (HA)
 \pgfutil@tempcnta=\count129
 \pgfutil@tempcntb=\count130
 )
-(c:/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen155
 \pgfmath@count=\count131
 \pgfmath@box=\box28
@@ -538,24 +539,24 @@ File: xkeyval.tex 2014/05/25 v2.7 key=value parser (HA)
 \pgfmath@stack@operand=\toks40
 \pgfmath@stack@operation=\toks41
 )
-(c:/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
-(c:/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.te
-x)
-(c:/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
 .code.tex)
-(c:/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.t
-ex)
-(c:/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.co
-de.tex)
-(c:/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
-)
-(c:/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.te
-x)
-(c:/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
-)
-(c:/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithm
-etics.code.tex)))
-(c:/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count132
 ))
 \pgffor@iter=\dimen156
@@ -565,7 +566,7 @@ etics.code.tex)))
 )
 \psLoopIndex=\count133
 
-`PSTricks' v2.56  <2014/07/31> (tvz)
+`PSTricks' v2.54a  <2014/05/19> (tvz)
 \pst@dima=\dimen158
 \pst@dimb=\dimen159
 \pst@dimc=\dimen160
@@ -591,7 +592,7 @@ etics.code.tex)))
 \pst@cntp=\count143
 \@zero=\count144
 \pst@toks=\toks44
-(c:/texlive/2014/texmf-dist/tex/generic/pstricks/pstricks.con)
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks/pstricks.con)
 \psunit=\dimen168
 \psxunit=\dimen169
 \psyunit=\dimen170
@@ -611,15 +612,15 @@ etics.code.tex)))
 \sh@wgridYunit=\dimen181
 \pst@shift=\dimen182
 )
-File: pstricks.tex 2014/07/31 v2.56 `PSTricks' (tvz,hv)
+File: pstricks.tex 2014/05/19 v2.54a `PSTricks' (tvz,hv)
 
-(c:/texlive/2014/texmf-dist/tex/generic/pstricks/pst-fp.tex)
-File: pst-fp.tex 2014/07/31 v2.56 `PST-fp' (hv)
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks/pst-fp.tex)
+File: pst-fp.tex 2014/05/19 v2.54a `PST-fp' (hv)
 
-(c:/texlive/2014/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-(c:/texlive/2014/texmf-dist/tex/latex/latexconfig/color.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -633,17 +634,17 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 ))
-(c:/texlive/2014/texmf-dist/tex/latex/pst-plot/pst-plot.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pst-plot/pst-plot.sty
 Package: pst-plot 2011/06/05 v1.00 LaTeX wrapper for `pst-plot' (HV)
 
-(c:/texlive/2014/texmf-dist/tex/latex/xkeyval/pst-xkey.sty
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/pst-xkey.sty
 Package: pst-xkey 2005/11/25 v1.6 package wrapper for pst-xkey.tex (HA)
 )
-(c:/texlive/2014/texmf-dist/tex/latex/multido/multido.sty
+(/usr/share/texlive/texmf-dist/tex/latex/multido/multido.sty
 Package: multido 2004/05/17 package wrapper for PSTricks `multido.tex', (HV/RN)
 
 
-(c:/texlive/2014/texmf-dist/tex/generic/multido/multido.tex
+(/usr/share/texlive/texmf-dist/tex/generic/multido/multido.tex
  v1.42, 2010/05/14 <tvz>
 \multido@count=\count146
 \multidocount=\count147
@@ -653,9 +654,9 @@ File: multido.tex 2010/05/14 v1.42 `multido' (tvz,hv)
 )
 Package: pst-plot 2011/04/13 package wrapper for pst-plot.tex (hv)
 
-(c:/texlive/2014/texmf-dist/tex/generic/pst-plot/pst-plot.tex
-(c:/texlive/2014/texmf-dist/tex/generic/pst-tools/pst-tools.tex
-`PST-tools' v0.05, 2014/05/12 (hv))  v1.68, 2014/08/04 (tvz,hv)
+(/usr/share/texlive/texmf-dist/tex/generic/pst-plot/pst-plot.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pst-tools/pst-tools.tex
+`PST-tools' v0.05, 2014/05/12 (hv))  v1.64, 2014/07/07 (tvz,hv)
 \pstRadUnit=\dimen183
 \pstRadUnitInv=\dimen184
 \pst@linecnt=\count148
@@ -677,14 +678,14 @@ Package: pst-plot 2011/04/13 package wrapper for pst-plot.tex (hv)
 \pst@xunit=\dimen198
 \pst@yunit=\dimen199
 )
-File: pst-plot.tex 2014/08/04 1.68 `pst-plot' (tvz,hv)
+File: pst-plot.tex 2014/07/07 1.64 `pst-plot' (tvz,hv)
 )
-(c:/texlive/2014/texmf-dist/tex/latex/pst-node/pst-node.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pst-node/pst-node.sty
 Package: pst-node 2012/09/18 v1.01 LaTeX wrapper for `pst-node' (HV)
 Package: pst-node 2010/04/22 package wrapper for pst-node.tex
 
-(c:/texlive/2014/texmf-dist/tex/generic/pst-node/pst-node.tex
- v1.35, 2014/08/04
+(/usr/share/texlive/texmf-dist/tex/generic/pst-node/pst-node.tex
+ v1.33, 2014/03/25
 \psrow=\count150
 \pscol=\count151
 \psmatrixcnt=\count152
@@ -694,26 +695,25 @@ Package: pst-node 2010/04/22 package wrapper for pst-node.tex
 \num@pts=\count154
 \pst@argcnt=\count155
 )
-File: pst-node.tex 2014/08/04 1.35 `pst-node' (tvz,hv)
-) (c:/texlive/2014/texmf-dist/tex/latex/pst-3d/pst-3d.sty
+File: pst-node.tex 2014/03/25 1.33 `pst-node' (tvz,hv)
+) (/usr/share/texlive/texmf-dist/tex/latex/pst-3d/pst-3d.sty
 Package: pst-3d 2009/07/28 package wrapper for pst-3d.tex (hv)
-
-(c:/texlive/2014/texmf-dist/tex/generic/pst-3d/pst-3d.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pst-3d/pst-3d.tex
 `PST-3d' v1.11, 2010/02/14 (tvz))
 File: pst-3d.tex 2010/02/14 v1.11 `PST-3d' (hv)
 )
-(c:/texlive/2014/texmf-dist/tex/latex/pst-math/pst-math.sty
-Package: pst-math 2014/07/30 package wrapper for PSTricks pst-math.tex
+(/usr/share/texlive/texmf-dist/tex/latex/pst-math/pst-math.sty
+Package: pst-math 2009/01/20 package wrapper for PSTricks pst-math.tex
 
-(c:/texlive/2014/texmf-dist/tex/generic/pst-math/pst-math.tex
-`pst-math' v0.63 , (CJ,hv))
-File: pst-math.tex 2014/07/30 v0.63 `PST-math' (hv)
+(/usr/share/texlive/texmf-dist/tex/generic/pst-math/pst-math.tex
+`pst-math' v0.62 , (CJ,hv))
+File: pst-math.tex 2010/10/20 v0.62 `PST-math' (hv)
 )
 Package: pstricks-add 2010/02/11 v. 0.14 package wrapper for pstricks-add.tex (
 hv)
 
-(c:/texlive/2014/texmf-dist/tex/generic/pstricks-add/pstricks-add.tex
-`pstricks-add' v3.75, 2014/07/22 (dr,hv)
+(/usr/share/texlive/texmf-dist/tex/generic/pstricks-add/pstricks-add.tex
+`pstricks-add' v3.73, 2014/06/16 (dr,hv)
 \psparallelogramsep=\dimen200
 \pshooklength=\dimen201
 \pshookwidth=\dimen202
@@ -726,24 +726,24 @@ hv)
 \chart@Toggle=\count157
 \psVectorCtr=\count158
 )
-File: pstricks-add.tex 2014/07/22 v3.75 `PSTricks-add' (hv)
+File: pstricks-add.tex 2014/06/16 v3.73 `PSTricks-add' (hv)
 Package pstricks-add Info: Local config file pstricks-add.cfg used on input lin
 e 20.
 
-(c:/texlive/2014/texmf-dist/tex/latex/pstricks-add/pstricks-add.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/pstricks-add/pstricks-add.cfg
 File: pstricks-add.cfg 2005/01/10 v0.1 addtional user stuff (hv)
 ))
-(c:/texlive/2014/texmf-dist/tex/latex/auto-pst-pdf/auto-pst-pdf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/auto-pst-pdf/auto-pst-pdf.sty
 Package: auto-pst-pdf 2009/04/26 v0.6 Wrapper for pst-pdf
 
-(c:/texlive/2014/texmf-dist/tex/latex/ifplatform/ifplatform.sty
+(/usr/share/texlive/texmf-dist/tex/latex/ifplatform/ifplatform.sty
 Package: ifplatform 2010/10/22 v0.4 Testing for the operating system
 
-(c:/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(c:/texlive/2014/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -752,16 +752,23 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(c:/texlive/2014/texmf-dist/tex/generic/oberdiek/catchfile.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/catchfile.sty
 Package: catchfile 2011/03/01 v1.6 Catch the contents of a file (HO)
 
-(c:/texlive/2014/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
-)))
+))
+runsystem(uname -s > "TripletReport.w18")...executed.
+
+
+(./TripletReport.w18)
+runsystem(rm -- "TripletReport.w18")...executed.
+
+)
 \c@app@runs=\count159
 runsystem(echo " ")...executed.
 
@@ -771,27 +778,25 @@ runsystem(echo "auto-pst-pdf: Auxiliary LaTeX compilation")...executed.
 
 runsystem(echo "-------------------------------------------------")...executed.
 
-runsystem(del "TripletReport-pics.pdf")...executed.
-
-runsystem(latex -disable-write18 -jobname="TripletReport-autopp" -interaction=b
+runsystem(latex -no-shell-escape -jobname="TripletReport-autopp" -interaction=b
 atchmode  "\let \APPmakepictures \empty \input  TripletReport.tex")...executed.
 
 runsystem(dvips -Ppdf -o "TripletReport-autopp.ps" "TripletReport-autopp.dvi").
 ..executed.
 
-runsystem(ps2pdf  "TripletReport-autopp.ps" "TripletReport-autopp.pdf")...execu
-ted.
+runsystem(ps2pdf -dAutoRotatePages=/None "TripletReport-autopp.ps" "TripletRepo
+rt-autopp.pdf")...executed.
 
 runsystem(pdfcrop  "TripletReport-autopp.pdf" "TripletReport-pics.pdf")...execu
 ted.
 
-runsystem(del "TripletReport-autopp.log")...executed.
+runsystem(rm -- "TripletReport-autopp.log")...executed.
 
-runsystem(del "TripletReport-autopp.dvi")...executed.
+runsystem(rm -- "TripletReport-autopp.dvi")...executed.
 
-runsystem(del "TripletReport-autopp.ps")...executed.
+runsystem(rm -- "TripletReport-autopp.ps")...executed.
 
-runsystem(del "TripletReport-autopp.pdf")...executed.
+runsystem(rm -- "TripletReport-autopp.pdf")...executed.
 
 runsystem(echo "-------------------------------------------------")...executed.
 
@@ -800,25 +805,25 @@ runsystem(echo "auto-pst-pdf: End auxiliary LaTeX compilation")...executed.
 runsystem(echo "-------------------------------------------------")...executed.
 
 
-(c:/texlive/2014/texmf-dist/tex/latex/pst-pdf/pst-pdf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pst-pdf/pst-pdf.sty
 Package: pst-pdf 2008/10/09 v1.1v PS graphics for pdfLaTeX (RN,HjG)
 \c@pspicture=\count160
 Package pst-pdf Info: MODE: 1 (pdfTeX mode) on input line 214.
 \ppf@output=\toks48
 
-(c:/texlive/2014/texmf-dist/tex/latex/preview/preview.sty
-Package: preview 2010/02/14 11.86 (AUCTeX/preview-latex)
+(/usr/share/texmf/tex/latex/preview/preview.sty
+Package: preview 2010/02/14 11.87 (AUCTeX/preview-latex)
 \pr@snippet=\count161
 \pr@box=\box32
 \pr@output=\toks49
 )
-(c:/texlive/2014/texmf-dist/tex/latex/graphics/dvips.def
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvips.def
 File: dvips.def 2014/04/23 v3.0j Driver-dependant file (DPC,SPQR)
 )
-(c:/texlive/2014/texmf-dist/tex/latex/environ/environ.sty
+(/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
 
-(c:/texlive/2014/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+(/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))))
 (./TripletReport.aux)
@@ -871,7 +876,7 @@ LaTeX Font Info:    ... okay on input line 56.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(c:/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count162
 \scratchdimen=\dimen208
@@ -892,12 +897,12 @@ Package caption Info: End \AtBeginDocument code.
 Preview: Fontsize 10pt
 Preview: PDFoutput 1
 LaTeX Font Info:    Try loading font information for U+msa on input line 57.
-(c:/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 57.
 
-(c:/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 <TripletReport-pics.pdf, id=2, page=1, 242.9075pt x 297.11pt>
@@ -912,27 +917,27 @@ Package pdftex.def Info: TripletReport-pics.pdf, page1 used on input line 109.
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!{c:/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdft
-ex.map}] [2 <./TripletReport-pics.pdf>] (./TripletReport.aux) ) 
+Non-PDF special ignored!{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+[2 <./TripletReport-pics.pdf>] (./TripletReport.aux) ) 
 Here is how much of TeX's memory you used:
- 13743 strings out of 493108
- 230216 string characters out of 6138447
- 352033 words of memory out of 5000000
- 16958 multiletter control sequences out of 15000+600000
+ 13737 strings out of 495021
+ 230803 string characters out of 6181345
+ 345927 words of memory out of 5000000
+ 16699 multiletter control sequences out of 15000+600000
  12743 words of font info for 49 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
+ 14 hyphenation exceptions out of 8191
  44i,11n,75p,597b,425s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2014
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2014/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2014/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2014/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr12.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr17.pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.
-pfb><c:/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/t
-exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/20
-14/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2014/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on TripletReport.pdf (2 pages, 107014 bytes).
+</usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss
+12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on TripletReport.pdf (2 pages, 107058 bytes).
 PDF statistics:
  75 PDF objects out of 1000 (max. 8388607)
  51 compressed objects within 1 object stream
