@@ -31,6 +31,7 @@ Technion Israel Institute of Technology\\
 
 \newcommand{\fix}{\marginpar{FIX}}
 \newcommand{\new}{\marginpar{NEW}}
+\newcommand{\nir}[1]{{\color{red}{#1}}}
 
 %\iclrfinalcopy % Uncomment for camera-ready version
 
@@ -93,7 +94,7 @@ A \emph{Triplet network} (inspired by "Siamese network") is comprised of 3 insta
 When fed with 3 samples, the network
 outputs 2 intermediate values - the $L_2$ distances between the embedded representation of two of its inputs from the representation of the third. 
 If we will denote the 3 inputs as $x$, $x^{+}$ and $x^{-}$, and the
-embedded representation of the network as $Net(x)$, the one-before last layer  will be the vector:
+embedded representation of the network as $Net(x)$, the one before last layer  will be the vector:
 
 \begin{equation*}
     TripletNet(x,x^{-},x^{+})= \begin{bmatrix}
@@ -129,8 +130,8 @@ $$Loss(d_{+},d_{-}) = \|(d_{+} , d_{-}-1)\|_2^2 = const\cdot d_+^2$$
 where
 $$ d_{+} = \frac{e^{\|Net(x)-Net(x^{+})\|_2}}{e^{\|Net(x)-Net(x^{+})\|_2}+e^{\|Net(x)-Net(x^{-})\|_2}}$$
 and
-$$ d_{-} = \frac{e^{\|Net(x)-Net(x^{-})\|_2}}{e^{\|Net(x)-Net(x^{+})\|_2}+e^{\|Net(x)-Net(x^{-})\|_2}}$$
-We note that $Loss(d_{+},d_{-})  \to 0$ iff $\frac{\|Net(x)-Net(x^{+})\|}{\|Net(x)-Net(x^{-})\|} \to 0$, which is the required objective. \\
+$$ d_{-} = \frac{e^{\|Net(x)-Net(x^{-})\|_2}}{e^{\|Net(x)-Net(x^{+})\|_2}+e^{\|Net(x)-Net(x^{-})\|_2}}\ .$$
+We note that $Loss(d_{+},d_{-})  \to 0$ iff $\frac{\|Net(x)-Net(x^{+})\|}{\|Net(x)-Net(x^{-})\|} \to 0$, which is the required objective. 
 By using the same shared parameters network, we allow the back-propagation algorithm to update the model with regard to all three samples simultaneously.
 
 \section{Tests and results}
@@ -139,32 +140,34 @@ By using the same shared parameters network, we allow the back-propagation algor
 
 We experimented with  4 datasets.  The first is \emph{Cifar10}  (\citet{krizhevsky2009learning}), consisting of 60000 32x32 color images of 10 classes (of which 50000 are used for training only, and 10000 for test only). 
 The second dataset is the original \emph{MNIST} (\citet{lecun1998gradient}) consisting of 60000 28x28 gray-scale images of handwritten digits 0-9, and a corresponding set of 10000 test images.
-The third is the  \emph{Street-View-House-Numbers (SVHN)} \citet{netzer2011reading} consisting of ~600,000 32x32 color images of house-number digits 0-9.
-The fourth dataset   \emph{STL10} \citet{coates2011analysis}, similar to Cifar10 and consisting of 10 object classes, only with 5000 training images (instead of 50000 in Cifar) and a bigger 96x96 image size.
+The third is the  \emph{Street-View-House-Numbers (SVHN)} of \citet{netzer2011reading} consisting of ~600000 32x32 color images of house-number digits 0-9.
+The fourth dataset   is \emph{STL10} of \citet{coates2011analysis}, similar to Cifar10 and consisting of 10 object classes, only with 5000 training images (instead of 50000 in Cifar) and a bigger 96x96 image size.
 
-Due to technical problems of broken URLs corresponding to many images, we could not use the same dataset  of \cite{WangSLRWPCW2014}, who were the first  (as far as we know)  to use an architecture similar
-to our triplet network.  %  due to broken urls corresponding to many data points.  %namely that of \cite{WangSLRWPCW2014}.
+%Due to technical problems of broken URLs corresponding to many images, we could not use the same dataset  of \cite{WangSLRWPCW2014}, who were the first  (as far as we know)  to use an architecture similar
+%to our triplet network.  %  due to broken urls corresponding to many data points.  %namely that of \cite{WangSLRWPCW2014}.
 
 It is important to note that no data augmentation or whitening was applied, and the only preprocessing was a global normalization to zero mean and unit variance.
 Each training instance (for all four datasets) was a uniformly sampled set of 3 images, 2 of which are of the same class ($x$ and $x^{+}$), and the third ($x^{-}$)  of a different class. Each training epoch consisted of 640000 such instances (randomly chosen each epoch), and a fixed set of 64000 instances used for test. We emphasize that each test instance involves 3 images from the set of test images which was excluded from training.
 \subsection{The Embedding Net}
-We used a convolutional network, consisting of 3 convolutional and 2x2 max-pooling layers, followed by a fourth convolutional layer. A \emph{ReLU} non-linearity is applied between two consecutive layers.
+Fir Cifar10 and SVHN e used a convolutional network, consisting of 3 convolutional and 2x2 max-pooling layers, followed by a fourth convolutional layer. A \emph{ReLU} non-linearity is applied between two consecutive layers.
 Network configuration (ordered from input to output) consists of filter sizes \{5,3,3,2\}, and feature map dimensions \{3,64,128,256,128\} where a 128 vector is the final embedded representation of the network. Usually in convolutional networks, a subsequent fully-connected
 layer is used for classification. In our net this layer is removed, as we are interested in a feature embedding only.
 
-This network was used for Cifar10 and SVHN datasets. The STL10 network is identical, only with stride=3 for the first layer, to allow the bigger input size. The network used for MNIST was a smaller version consisting of smaller feature map sizes \{1,32,64,128\}.
+%This network was used for Cifar10 and SVHN datasets.
+ The network for STL10 is identical, only with stride=3 for the first layer, to allow the bigger input size. The network used for MNIST was a smaller version consisting of smaller feature map sizes \{1,32,64,128\}.
 
 
 
 \subsection{Results}
-Training was done by SGD, with initial learning-rate of 0.5 and a learning rate decay regime. We used a momentum value of 0.9. We also used the Dropout regularization technique with $p=0.5$ to avoid over-fitting.
+Training was done by SGD, with initial learning-rate of 0.5 and a learning rate decay regime. We used a momentum value of 0.9. We also used the dropout regularization technique with $p=0.5$ to avoid over-fitting.
 After training on each dataset for 10-30 epochs, the network reached a fixed error over the triplet comparisons.
-  We then used the embedding network to extract features from the full dataset, and trained a simple 1-layer network model on the full 10-class classification task (using only training set representations) .The test set was then measured for accuracy. 
-  This results \ref{results} are comparable to state-of-the-art results with deep learning models, without using any artificial data augmentation (\citet{zeiler2013stochastic,goodfellow2013maxout,LinCY13}). 
+  We then used the embedding network to extract features from the full dataset, and trained a simple 1-layer network model on the full 10-class classification task (using only training set representations).  The test set was then measured for accuracy. 
+  This results (Figure~\ref{results}) are comparable to state-of-the-art results with deep learning models, without using any artificial data augmentation (\citet{zeiler2013stochastic,goodfellow2013maxout,LinCY13}). 
   Noteworthy is the STL10 dataset, in which the TripletNet achieved the best known result for non-augmented data.
-  We conjecture that data augmentation techniques (such as translations, mirroring and noising) may provide similar benefits to those described in previous works.\\
-    We also note that similar results are achieved when the embedded representations are classified using a linear SVM model or KNN classification with up to 0.5\% deviance from the results in \ref{results}.
-Another side-affect noticed, is that the representation seems to be sparse - about 25\% non-zero values. This is very helpful when used later as features for classification both computationally and with respect to accuracy, as each class is characterised by only a few non zero elements. 
+  We conjecture that data augmentation techniques (such as translations, mirroring and noising) may provide similar benefits to those described in previous works.
+
+    We also note that similar results are achieved when the embedded representations are classified using a linear SVM model or KNN classification with up to 0.5\% deviance from the results in Figure~\ref{results}.
+Another side-affect noticed, is that the representation seems to be sparse - about 25\% non-zero values. This is very helpful when used later as features for classification both computationally and with respect to accuracy, as each class is characterised by only a few non zero elements.  \nir{Is this for Cifar10 only or for all datasets?}
   
   
 
@@ -174,12 +177,12 @@ Another side-affect noticed, is that the representation seems to be sparse - abo
     \begin{tabular}{ | c | c | c | p{8cm} |}
     \hline
     Dataset & TripletNet   & SiameseNet  & Best known result (with no data augmentation)       \\ \hline
-    Mnist & 99.54\% & 97.9\%& 99.61\% \citet{mairal2014convolutional,lee2014deeply}  \\ \hline
+    Mnist & 99.54 $\pm$\nir{std}\% & 97.9$\pm$\nir{std}\%& 99.61\% \citet{mairal2014convolutional,lee2014deeply}  \\ \hline
     Cifar10 & 87.1\% & - & 90.22\% \citet{lee2014deeply}  \\ \hline
     SVHN &  95.37\% & -& 98.18\% \citet{lee2014deeply} \\ \hline
     STL10& 70.67\%& - & 67.9\% \citet{lin2014stable}\\ \hline
     \end{tabular}
-     \caption{Results on various datasets (no data augmentation)}\label{results}
+     \caption{Classification accuracy (no data augmentation)}\label{results}
      \end{figure}
 \subsection{2d visualization of features}
 In order to examine our main premise, which is that the network embeds the images into a representation with meaningful properties, we
@@ -191,7 +194,7 @@ classification accuracy using a simple subsequent linear classifier.
 %For convenience, we plot the confusion matrix (figure \ref{confusion}) for the classification results on the test set, which should be compared with its visual embedding (figure \ref{EuclideanRepresentation}).
 
 \subsection{Comparison with performance of the Siamese network}
-The Siamese network is the most obvious competitor for our approach.  Our implementation of the Siamese network consisted of the same embedding network, but with the use of a contrastive loss between two samples \cite{Chopra2005}. The resulted features were then used for classification using a similar linear model as was used for the We measured lower accuracy compared to the TripletNet.
+The Siamese network is the most obvious competitor for our approach.  Our implementation of the Siamese network consisted of the same embedding network, but with the use of a contrastive loss between a pair of samples, instead of three (as explained in  \cite{Chopra2005}).  The generated features were then used for classification using a similar linear model as was used for the We measured lower accuracy compared to the TripletNet. \nir{Fix the last sentence}
 
 We have tried a similar comparison for the other three datasets, but unfortunately could not obtain any meaningful result using a Siamese network.
 We conjecture that this might be related to the problem of context described above, and leave the resolution of this 
@@ -202,19 +205,19 @@ conjecture to future work.
 \begin{center}
 \includegraphics[width=1\linewidth]{Rep.eps}
 \end{center}
-   \caption{CIFAR10 - Euclidean 2d representation of embedded test data }\label{TripletRepCIFAR10}
+   \caption{CIFAR10 - Euclidean representation of embedded test data, projected onto top two singular vectors}\label{TripletRepCIFAR10}
 \end{figure}
 \begin{figure}[h]
 \begin{center}
 \includegraphics[width=1\linewidth]{mnist-rep.eps}
 \end{center}
-   \caption{MNIST - Euclidean 2d representation of embedded test data}\label{TripletRepMNIST}
+   \caption{MNIST - Euclidean representation of embedded test data, projected onto top two singular vectors}\label{TripletRepMNIST}
 \end{figure}
 \begin{figure}[h]
 \begin{center}
 \includegraphics[width=1\linewidth]{svhn-rep.eps}
 \end{center}
-   \caption{SVHN - Euclidean 2d representation of embedded test data}\label{TripletRepSVHN}
+   \caption{SVHN - Euclidean representation of embedded test data, projected onto top two singular vectors}\label{TripletRepCIFAR10}\label{TripletRepSVHN}
 \end{figure}
 %\begin{figure}[h]
 %\begin{center}
