@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.1.31)  27 FEB 2015 10:33
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.1.31)  27 FEB 2015 10:36
 entering extended mode
 **C:/Users/Dell/Documents/work/hoffer_triplets/TripletNetworkPaper/TripletNet_i
 clr2015.tex
@@ -484,7 +484,7 @@ Package pdftex.def Info: svhn-rep-eps-converted-to.pdf used on input line 218.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \vbox (badness 6808) has occurred while \output is active []
+Underfull \vbox (badness 3482) has occurred while \output is active []
 
  [4]
 [5 <C:/Users/Dell/Documents/work/hoffer_triplets/TripletNetworkPaper/Rep-eps-co
@@ -519,7 +519,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 254.
 Here is how much of TeX's memory you used:
  7241 strings out of 493921
  103228 string characters out of 3147285
- 193582 words of memory out of 3000000
+ 194582 words of memory out of 3000000
  10379 multiletter control sequences out of 15000+200000
  20656 words of font info for 43 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -537,9 +537,9 @@ ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files
 KTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/u
 tmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on TripletNet_iclr2015.pdf (8 pages, 6342759 bytes).
+Output written on TripletNet_iclr2015.pdf (8 pages, 6343027 bytes).
 PDF statistics:
- 304 PDF objects out of 1000 (max. 8388607)
+ 305 PDF objects out of 1000 (max. 8388607)
  52 named destinations out of 1000 (max. 500000)
  109 words of extra memory for PDF output out of 10000 (max. 10000000)
 

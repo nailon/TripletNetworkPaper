@@ -161,8 +161,8 @@ layer is used for classification. In our net this layer is removed, as we are in
 \subsection{Results}
 Training was done by SGD, with initial learning-rate of 0.5 and a learning rate decay regime. We used a momentum value of 0.9. We also used the dropout regularization technique with $p=0.5$ to avoid over-fitting.
 After training on each dataset for 10-30 epochs, the network reached a fixed error over the triplet comparisons.
-  We then used the embedding network to extract features from the full dataset, and trained a simple 1-layer network model on the full 10-class classification task (using only training set representations).  The test set was then measured for accuracy. 
-  This results (Figure~\ref{results}) are comparable to state-of-the-art results with deep learning models, without using any artificial data augmentation (\citet{zeiler2013stochastic,goodfellow2013maxout,LinCY13}). 
+  We then used the embedding network to extract features from the full dataset, and trained a simple 1-layer network model on the full 10-class classification task (using only training set representations).  The test set was then measured for accuracy.  \nir{Are you referring here to Cifar10 only?}
+  These results (Figure~\ref{results}) are comparable to state-of-the-art results with deep learning models, without using any artificial data augmentation (\citet{zeiler2013stochastic,goodfellow2013maxout,LinCY13}). 
   Noteworthy is the STL10 dataset, in which the TripletNet achieved the best known result for non-augmented data.
   We conjecture that data augmentation techniques (such as translations, mirroring and noising) may provide similar benefits to those described in previous works.
 
