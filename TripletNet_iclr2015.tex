@@ -149,7 +149,7 @@ The fourth dataset   is \emph{STL10} of \citet{coates2011analysis}, similar to C
 It is important to note that no data augmentation or whitening was applied, and the only preprocessing was a global normalization to zero mean and unit variance.
 Each training instance (for all four datasets) was a uniformly sampled set of 3 images, 2 of which are of the same class ($x$ and $x^{+}$), and the third ($x^{-}$)  of a different class. Each training epoch consisted of 640000 such instances (randomly chosen each epoch), and a fixed set of 64000 instances used for test. We emphasize that each test instance involves 3 images from the set of test images which was excluded from training.
 \subsection{The Embedding Net}
-Fir Cifar10 and SVHN e used a convolutional network, consisting of 3 convolutional and 2x2 max-pooling layers, followed by a fourth convolutional layer. A \emph{ReLU} non-linearity is applied between two consecutive layers.
+For Cifar10 and SVHN we used a convolutional network, consisting of 3 convolutional and 2x2 max-pooling layers, followed by a fourth convolutional layer. A \emph{ReLU} non-linearity is applied between two consecutive layers.
 Network configuration (ordered from input to output) consists of filter sizes \{5,3,3,2\}, and feature map dimensions \{3,64,128,256,128\} where a 128 vector is the final embedded representation of the network. Usually in convolutional networks, a subsequent fully-connected
 layer is used for classification. In our net this layer is removed, as we are interested in a feature embedding only.
 
