@@ -159,15 +159,15 @@ layer is used for classification. In our net this layer is removed, as we are in
 
 
 \subsection{Results}
-Training was done by SGD, with initial learning-rate of 0.5 and a learning rate decay regime. We used a momentum value of 0.9. We also used the dropout regularization technique with $p=0.5$ to avoid over-fitting.
+Training on all datasets was done by SGD, with initial learning-rate of 0.5 and a learning rate decay regime. We used a momentum value of 0.9. We also used the dropout regularization technique with $p=0.5$ to avoid over-fitting.
 After training on each dataset for 10-30 epochs, the network reached a fixed error over the triplet comparisons.
-  We then used the embedding network to extract features from the full dataset, and trained a simple 1-layer network model on the full 10-class classification task (using only training set representations).  The test set was then measured for accuracy.  \nir{Are you referring here to Cifar10 only?}
+  We then used the embedding network to extract features from the full dataset, and trained a simple 1-layer network model on the full 10-class classification task (using only training set representations).  The test set was then measured for accuracy.  
   These results (Figure~\ref{results}) are comparable to state-of-the-art results with deep learning models, without using any artificial data augmentation (\citet{zeiler2013stochastic,goodfellow2013maxout,LinCY13}). 
   Noteworthy is the STL10 dataset, in which the TripletNet achieved the best known result for non-augmented data.
   We conjecture that data augmentation techniques (such as translations, mirroring and noising) may provide similar benefits to those described in previous works.
 
     We also note that similar results are achieved when the embedded representations are classified using a linear SVM model or KNN classification with up to 0.5\% deviance from the results in Figure~\ref{results}.
-Another side-affect noticed, is that the representation seems to be sparse - about 25\% non-zero values. This is very helpful when used later as features for classification both computationally and with respect to accuracy, as each class is characterised by only a few non zero elements.  \nir{Is this for Cifar10 only or for all datasets?}
+Another side-affect noticed, is that the representation seems to be sparse - about 25\% non-zero values. This is very helpful when used later as features for classification both computationally and with respect to accuracy, as each class is characterised by only a few non zero elements.  
   
   
 
@@ -177,7 +177,7 @@ Another side-affect noticed, is that the representation seems to be sparse - abo
     \begin{tabular}{ | c | c | c | p{8cm} |}
     \hline
     Dataset & TripletNet   & SiameseNet  & Best known result (with no data augmentation)       \\ \hline
-    Mnist & 99.54 $\pm$\nir{std}\% & 97.9$\pm$\nir{std}\%& 99.61\% \citet{mairal2014convolutional,lee2014deeply}  \\ \hline
+    Mnist & 99.54\%$\pm 0.08$ & 97.9\%$\pm 0.1$& 99.61\% \citet{mairal2014convolutional,lee2014deeply}  \\ \hline
     Cifar10 & 87.1\% & - & 90.22\% \citet{lee2014deeply}  \\ \hline
     SVHN &  95.37\% & -& 98.18\% \citet{lee2014deeply} \\ \hline
     STL10& 70.67\%& - & 67.9\% \citet{lin2014stable}\\ \hline
@@ -194,7 +194,7 @@ classification accuracy using a simple subsequent linear classifier.
 %For convenience, we plot the confusion matrix (figure \ref{confusion}) for the classification results on the test set, which should be compared with its visual embedding (figure \ref{EuclideanRepresentation}).
 
 \subsection{Comparison with performance of the Siamese network}
-The Siamese network is the most obvious competitor for our approach.  Our implementation of the Siamese network consisted of the same embedding network, but with the use of a contrastive loss between a pair of samples, instead of three (as explained in  \cite{Chopra2005}).  The generated features were then used for classification using a similar linear model as was used for the We measured lower accuracy compared to the TripletNet. \nir{Fix the last sentence}
+The Siamese network is the most obvious competitor for our approach.  Our implementation of the Siamese network consisted of the same embedding network, but with the use of a contrastive loss between a pair of samples, instead of three (as explained in  \cite{Chopra2005}).  The generated features were then used for classification using a similar linear model as was used for the TripletNet method. We measured lower accuracy on the MNIST dataset compared to results gained using the TripletNet representations \ref{results}. 
 
 We have tried a similar comparison for the other three datasets, but unfortunately could not obtain any meaningful result using a Siamese network.
 We conjecture that this might be related to the problem of context described above, and leave the resolution of this 
