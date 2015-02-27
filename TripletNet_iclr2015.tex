@@ -45,7 +45,7 @@ Technion Israel Institute of Technology\\
 \begin{abstract}
 Deep learning has proven itself as a successful set of models for learning useful semantic representations of data. These, however, are mostly implicitly learned as part of a classification task.
 In this paper we propose the \emph{triplet network} model, which aims to learn useful representations by distance comparisons.
-A similar model was defined by Wang et al. (2014), taylored made for learning a ranking for image information retrieval.  Here
+A similar model was defined by Wang et al. (2014), tailored made for learning a ranking for image information retrieval.  Here
 we demonstrate using various datasets that our model learns a better representation than that of its immediate competitor, the Siamese network.
 % We show demonstrate this on various datasets.   
 We also discuss future possible usage as a framework for unsupervised learning.
@@ -62,7 +62,7 @@ Despite their importance, these representations and their corresponding induced 
 treated as side effects of the  classification task, rather than being explicitly sought.
 There are also many interesting open question regarding the intermediate representations and their role in disentangling and explaining the data (\citet{Bengio2013}).
 Notable exceptions where explicit metric learning is preformed are the \emph{Siamese Network} variants (\citet{bromley1993signature,Chopra2005,hadsell2006dimensionality}), in which a contrastive loss over 
-the metric induced by the representation  is used to train the network to distinguish between similar and dissimilar \emph{pairs} of examples.  A contrastive loss favors a small distance between pairs of examples
+the metric induced by the representation  is used to train the network to distinguish between similar and dissimilar \emph{pairs} of examples.  A contrastive loss favours a small distance between pairs of examples
 labeled as similar, and large distances for pairs labeled dissimilar.
 However, the representations learned by these models provide sub-par results when used as features for classification, compared with other deep learning models including ours. Siamese networks are also sensitive to calibration in the sense that the notion of similarity vs dissimilarity requires context.  
 For example, a person might be deemed similar to another person when a dataset of random objects is provided, but might be deemed dissimilar with respect to the same other person when we wish to distinguish between two individuals in a set of individuals only. %Siamese network training requires a minimum distance prior in its loss function which requires calibration.
@@ -81,10 +81,10 @@ Accordingly, we will use the notation $x^{+}$ and $x^{-}$ instead of $x_1, x_2$.
 We focus on finding an $L_2$ embedding, by learning a function $F(x)$ for which $S(x,x')=\|F(x)-F(x')\|_2$.
 Inspired from the recent success of deep learning, we will use a deep network as our embedding function $F(x)$.
 
-We call our aproach a \emph{triplet network}.
+We call our approach a \emph{triplet network}.
 A similar approach  was proposed in  \cite{WangSLRWPCW2014} for the purpose of learning a ranking function for
 image retrieval.  Compared with the single application proposed in  \cite{WangSLRWPCW2014}, we make a comprehensive
-study of the  triplet architecture which is, as we shall argue below, intresting in and of itself.
+study of the  triplet architecture which is, as we shall argue below, interesting in and of itself.
 In fact, we shall demonstrate below that the triplet approach  is a strong competitor to the Siamese approach, its
 most obvious competitor.
 
@@ -231,20 +231,20 @@ Future investigations can be performed in several scenarios:
 \begin{itemize}
  \item {\bf Using spatial information. }Objects and image patches that are spatially near are also expected to be similar from a semantic perspective. Therefore, we could use geometric distance between patches of the same image as a rough similarity oracle $r(x,x')$, in an unsupervised setting.  
 \item {\bf Using temporal information.} The same is applicable to time domain, where two consecutive video frames are expected to describe the same object, while a frame taken 10 minutes later is less likely to do so.
-Our Triplet net may provide a better embedding and improve on past attempts in solving classificaion
-tasks in an unsupervised encironment, such as that of (\citet{mobahi2009deep}).
+Our Triplet net may provide a better embedding and improve on past attempts in solving classification
+tasks in an unsupervised environment, such as that of (\citet{mobahi2009deep}).
 \end{itemize}
 It is also well known that humans tend to be better at accurately providing comparative labels. Our framework can be used in a crowd sourcing learning environment. This can be compared with \citet{shamir}, who used a different approach.
 Furthermore, it may be easier to collect data trainable on a Triplet network, as comparisons over similarity measures are much easier to attain (pictures taken at the same location, shared annotations, etc).
 
 \section{Conclusions}
 In this work we introduced the \emph{Triplet network} model, a tool that uses a deep network to learn useful representation explicitly.
-The results shown on Cifar10 provide evidence that the representations that were learned are useful to classification in a way that is comparable with a network that was trained explicitly to classify samples. We believe that enhancement to the embedding network
+The results shown on various datasets provide evidence that the representations that were learned are useful to classification in a way that is comparable with a network that was trained explicitly to classify samples. We believe that enhancement to the embedding network
 such as Network-in-Network model (\citet{LinCY13}), Inception models (\citet{inception}) and others can benefit the Triplet net similarly to the way they benefited other classification tasks.
 Considering the fact that this method requires to know only that two out of three images are sampled from the same class, rather than knowing what that class is, we think this should be inquired further, and may provide us insights
 to the way deep networks learn in general.
 We have also shown how this model learns using only comparative measures instead of labels, which we can use in the future to leverage new data sources for which clear out labels are not known or do not make sense (e.g hierarchical labels).
-\subsubsection*{Acknowledgments}
+\subsubsection*{Acknowledgements}
 
 We gratefully acknowledge the support of NVIDIA Corporation with the donation of the Titan-Z GPU used for this research.
 
